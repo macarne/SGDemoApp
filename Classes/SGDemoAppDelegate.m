@@ -103,13 +103,13 @@
         return persistentStoreCoordinator;
     }
     
-    NSString *storePath = [[self applicationDocumentsDirectory] stringByAppendingPathComponent:@"SGLocationDemo.sqlite"];
+    NSString *storePath = [[self applicationDocumentsDirectory] stringByAppendingPathComponent:@"SGDemoApp.sqlite"];
     
     NSFileManager *fileManager = [NSFileManager defaultManager];
     // If the expected store doesn't exist, copy the default store.
     if (![fileManager fileExistsAtPath:storePath]) {
         
-        NSString *defaultStorePath = [[NSBundle mainBundle] pathForResource:@"SGLocationDemo" ofType:@"sqlite"];
+        NSString *defaultStorePath = [[NSBundle mainBundle] pathForResource:@"SGDemoApp" ofType:@"sqlite"];
         if (defaultStorePath)
             [fileManager copyItemAtPath:defaultStorePath toPath:storePath error:NULL];
         
@@ -129,7 +129,7 @@
         
         [fileManager removeItemAtPath:storePath error:nil];
         
-        NSString *defaultStorePath = [[NSBundle mainBundle] pathForResource:@"SGLocationDemo" ofType:@"sqlite"];
+        NSString *defaultStorePath = [[NSBundle mainBundle] pathForResource:@"SGDemoApp" ofType:@"sqlite"];
         if (defaultStorePath)
             [fileManager copyItemAtPath:defaultStorePath toPath:storePath error:NULL];
         

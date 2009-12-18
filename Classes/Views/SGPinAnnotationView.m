@@ -19,10 +19,7 @@ static UIImage* DefaultImage = nil;
         
         
         if(!DefaultImage)
-            DefaultImage = [[UIImage roundedImageWithImage:[UIImage imageNamed:@"SGDefaultProfilePicture.png"]
-                                              cornerWidth:5.0
-                                             cornerHeight:5.0
-                                                scaleSize:CGSizeMake(28.0, 28.0)] retain];
+            DefaultImage = [[UIImage imageNamed:@"SGDefaultProfilePicture.png"] retain];
         
         self.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeInfoLight];
         
@@ -56,13 +53,7 @@ static UIImage* DefaultImage = nil;
     UIImage* image = record.profileImage;
     
     if(!image || [image isKindOfClass:[NSNull class]])
-        image = DefaultImage;
-    else
-        image =  [UIImage roundedImageWithImage:image
-                                     cornerWidth:5.0
-                                    cornerHeight:5.0
-                                       scaleSize:CGSizeMake(28.0, 28.0)];
-    
+        image = DefaultImage;    
     
     objectImageView.image = record.serviceImage;
     
