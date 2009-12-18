@@ -20,6 +20,9 @@ enviornment is set to one of the standard styles. The map will load and display
 records based on the displayed region of the view. When the map retrieves 
 records from SimpleGeo, they are inserted into CoreData for future retrieval.
 
+Note: At the moment this is throw-away code. Plans to make things nice-and-pretty 
+will happen very soon.
+
 ================================================================================
 BUILD REQUIREMENTS:
 
