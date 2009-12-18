@@ -1,0 +1,5 @@
+In file included from /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.h:9,
+                 from /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGModelController.h:11,
+                 from /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Controllers/SGMainViewController.h:15,
+                 from /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/SGDemoAppDelegate.m:11:
+/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGManagedRecord.h:10: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'interface'

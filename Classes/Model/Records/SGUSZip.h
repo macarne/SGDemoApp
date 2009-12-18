@@ -1,0 +1,20 @@
+//
+//  SGUSZip.h
+//  SGiPhoneSDK
+//
+//  Created by Derek Smith on 11/13/09.
+//  Copyright 2009 SimpleGeo. All rights reserved.
+//
+
+
+#import "SGManagedRecord.h"
+
+@interface SGUSZip : SGManagedRecord {
+
+}
+
+@property (nonatomic, assign) double elevation;
+@property (nonatomic, retain) NSString* name;
+@property (nonatomic, retain) NSString* country;
+
+@end

@@ -1,0 +1,2338 @@
+TSGDemoApp
+v7
+r0
+t282792238.628707
+cCheck dependencies
+cProcessInfoPlistFile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/Info.plist Resources/SGDemoApp-Info.plist
+cCopyPlistFile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDemoApp-Info.plist Resources/SGDemoApp-Info.plist
+cCopyPlistFile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/Entitlements.plist Resources/Entitlements.plist
+cCpResource build/Debug-iphonesimulator/SGDemoApp.app/BlueTargetButton.png Resources/Images/BlueTargetButton.png
+cCpResource build/Debug-iphonesimulator/SGDemoApp.app/BrightKite.png Resources/Images/BrightKite.png
+cCpResource build/Debug-iphonesimulator/SGDemoApp.app/Crosshair.png Resources/Images/Crosshair.png
+cCpResource build/Debug-iphonesimulator/SGDemoApp.app/DefaultProfilePicture.png Resources/Images/DefaultProfilePicture.png
+cCpResource build/Debug-iphonesimulator/SGDemoApp.app/Flickr.png Resources/Images/Flickr.png
+cCpResource build/Debug-iphonesimulator/SGDemoApp.app/LocateMeButton.png Resources/Images/LocateMeButton.png
+cCpResource build/Debug-iphonesimulator/SGDemoApp.app/Twitter.png Resources/Images/Twitter.png
+cCpResource build/Debug-iphonesimulator/SGDemoApp.app/iTunesArtwork Resources/iTunesArtwork
+cCompileXIB /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/MainWindow.xib
+cCpResource build/Debug-iphonesimulator/SGDemoApp.app/Settings.bundle Resources/Settings.bundle
+cCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGBluePin.png SGiPhoneSDK/Images/SGBluePin.png
+cCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGBottomInspectorBackground.png SGiPhoneSDK/Images/SGBottomInspectorBackground.png
+cCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGCloseButton.png SGiPhoneSDK/Images/SGCloseButton.png
+cCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGDefaultContainer.png SGiPhoneSDK/Images/SGDefaultContainer.png
+cCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGDefaultProfilePicture.png SGiPhoneSDK/Images/SGDefaultProfilePicture.png
+cCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGDefaultRadarBackground.png SGiPhoneSDK/Images/SGDefaultRadarBackground.png
+cCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGDefaultRadarCurrentLocation.png SGiPhoneSDK/Images/SGDefaultRadarCurrentLocation.png
+cCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGDefaultRadarTargetImage.png SGiPhoneSDK/Images/SGDefaultRadarTargetImage.png
+cCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGDefaultSelectedContainer.png SGiPhoneSDK/Images/SGDefaultSelectedContainer.png
+cCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGGlassTargetBackground.png SGiPhoneSDK/Images/SGGlassTargetBackground.png
+cCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGMiddleInspectorBackground.png SGiPhoneSDK/Images/SGMiddleInspectorBackground.png
+cCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGRedPin.png SGiPhoneSDK/Images/SGRedPin.png
+cCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGTopInspectorBackground.png SGiPhoneSDK/Images/SGTopInspectorBackground.png
+cCpResource build/Debug-iphonesimulator/SGDemoApp.app/README SGiPhoneSDK/README
+cProcessPCH /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fyakxpubermcezhgdiqmjsmlusmb/SGDemoApp_Prefix.pch.gch Resources/SGDemoApp_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cDataModelCompile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDemoApp.mom /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/SGDemoApp.xcdatamodel
+cCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/main.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGMainViewController.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Controllers/SGMainViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGWebViewController.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Controllers/SGWebViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGSpecificLayer.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Layers/SGSpecificLayer.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGBrightkite.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGBrightkite.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGFlickr.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGFlickr.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGGeoNames.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGGeoNames.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGSocialRecord.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGTweet.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGTweet.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGUSWeather.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGUSWeather.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGUSZip.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGUSZip.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGEntityDescriptions.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGEntityDescriptions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGManagedRecord.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGManagedRecord.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGModelController.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGModelController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGDemoAppDelegate.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/SGDemoAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGSocialRecordTableCell.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGPinAnnotationView.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDemoApp normal i386
+cGenerateDSYMFile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app.dSYM /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDemoApp
+cTouch /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk
+c000000004AD0010600000000000000EE
+t1255145734
+s238
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+c000000004ABDC9B10000000000185440
+t1253951921
+s1594432
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.h
+c000000004ABDC9A7000000000000046B
+t1253951911
+s1131
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004ABDC853000000000026EE30
+t1253951571
+s2551344
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000004ABDEE58000000000004AFE0
+t1253961304
+s307168
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.h
+c000000004ABDEE5400000000000001AF
+t1253961300
+s431
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004ABDC952000000000027E880
+t1253951826
+s2615424
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004ABDC93F0000000000001355
+t1253951807
+s4949
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.h
+c000000004ABDEF74000000000000017D
+t1253961588
+s381
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/MapKit.framework/MapKit
+c000000004ABDEF82000000000010EB60
+t1253961602
+s1108832
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c000000004ABDCA31000000000001F8E0
+t1253952049
+s129248
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004ABDCAC8000000000000007D
+t1253952200
+s125
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004ABDCB2000000000000E5890
+t1253952288
+s940176
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/Security.framework/Security
+c000000004ABDC81B00000000000799B0
+t1253951515
+s498096
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004ABDEE1D0000000000000788
+t1253961245
+s1928
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004ABDEEE200000000016721E0
+t1253961442
+s23536096
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/usr/include/Availability.h
+c000000004ABDCA4700000000000019F9
+t1253952071
+s6649
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Controllers/SGMainViewController.h
+c000000004B2AD51B0000000000000463
+t1261098267
+s1123
+i<UIKit/UIKit.h>
+i<CoreLocation/CoreLocation.h>
+i<MapKit/MapKit.h>
+i"SimpleGeo.h"
+i"SGModelController.h"
+i"SGWebViewController.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Controllers/SGMainViewController.m
+c000000004B2AD8AE0000000000006B77
+t1261099182
+s27511
+i"SGMainViewController.h"
+i"SGFlickr.h"
+i"SGTweet.h"
+i"SGBrightkite.h"
+i"SGUSZip.h"
+i"SGUSWeather.h"
+i"SGGeoNames.h"
+i"SGSpecificLayer.h"
+i"SGPinAnnotationView.h"
+i"SGSocialRecordTableCell.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Controllers/SGWebViewController.h
+c000000004B2AD51B0000000000000139
+t1261098267
+s313
+i<UIKit/UIKit.h>
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Controllers/SGWebViewController.m
+c000000004B2AD51B00000000000002E5
+t1261098267
+s741
+i"SGWebViewController.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Layers/SGSpecificLayer.h
+c000000004B2AD51B0000000000000222
+t1261098267
+s546
+i"SGLayer.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Layers/SGSpecificLayer.m
+c000000004B2AD51B0000000000000415
+t1261098267
+s1045
+i"SGSpecificLayer.h"
+i"SGEntityDescriptions.h"
+i"SGSocialRecord.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGBrightkite.h
+c000000004B2AD51B000000000000014D
+t1261098267
+s333
+i"SGSocialRecord.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGBrightkite.m
+c000000004B2AD51B0000000000000B2E
+t1261098267
+s2862
+i"SGBrightkite.h"
+i"SGEntityDescriptions.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGFlickr.h
+c000000004B2AD51B00000000000000F6
+t1261098267
+s246
+i<CoreData/CoreData.h>
+i"SGSocialRecord.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGFlickr.m
+c000000004B2AD51B00000000000006A0
+t1261098267
+s1696
+i"SGFlickr.h"
+i"SGEntityDescriptions.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGGeoNames.h
+c000000004B2AD51B0000000000000138
+t1261098267
+s312
+i"SGManagedRecord.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGGeoNames.m
+c000000004B2AD51B000000000000069B
+t1261098267
+s1691
+i"SGGeoNames.h"
+i"SGEntityDescriptions.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.h
+c000000004B2AD51B000000000000032C
+t1261098267
+s812
+i"SGManagedRecord.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m
+c000000004B2AD51B000000000000134D
+t1261098267
+s4941
+i"SGSocialRecord.h"
+i"SGModelController.h"
+i"SGEntityDescriptions.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGTweet.h
+c000000004B2AD51B00000000000000F7
+t1261098267
+s247
+i<CoreData/CoreData.h>
+i"SGSocialRecord.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGTweet.m
+c000000004B2AD8D60000000000000764
+t1261099222
+s1892
+i"SGTweet.h"
+i"SGEntityDescriptions.h"
+i"SGLocationTypes.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGUSWeather.h
+c000000004B2AD51B00000000000000D8
+t1261098267
+s216
+i"SGManagedRecord.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGUSWeather.m
+c000000004B2AD51B0000000000000136
+t1261098267
+s310
+i"SGUSWeather.h"
+i"SGEntityDescriptions.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGUSZip.h
+c000000004B2AD51B0000000000000161
+t1261098267
+s353
+i"SGManagedRecord.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGUSZip.m
+c000000004B2AD51B0000000000000706
+t1261098267
+s1798
+i"SGUSZip.h"
+i"SGEntityDescriptions.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGEntityDescriptions.h
+c000000004B2AD51B00000000000002C0
+t1261098267
+s704
+i<CoreData/CoreData.h>
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGEntityDescriptions.m
+c000000004B2AD51B0000000000000768
+t1261098267
+s1896
+i"SGEntityDescriptions.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGManagedRecord.h
+c000000004B2AD95700000000000002AB
+t1261099351
+s683
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGManagedRecord.m
+c000000004B2AD51B0000000000001AC0
+t1261098267
+s6848
+i"SGManagedRecord.h"
+i"SGLocationTypes.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGModelController.h
+c000000004B2AD51B000000000000042B
+t1261098267
+s1067
+i<Foundation/Foundation.h>
+i"SGLocationTypes.h"
+i"SGSocialRecord.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGModelController.m
+c000000004B2AD51B0000000000001218
+t1261098267
+s4632
+i"SGModelController.h"
+i"SGEntityDescriptions.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/SGDemoAppAppDelegate.m
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/SGDemoAppDelegate.h
+c000000004B2AD6960000000000000311
+t1261098646
+s785
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/SGDemoAppDelegate.m
+c000000004B2AD8C500000000000015F8
+t1261099205
+s5624
+i"SGDemoAppDelegate.h"
+i"SGMainViewController.h"
+i"SGEntityDescriptions.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.h
+c000000004B2AD51B000000000000019F
+t1261098267
+s415
+i<UIKit/UIKit.h>
+i"SGSocialRecord.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.m
+c000000004B2AD95C0000000000000612
+t1261099356
+s1554
+i"SGSocialRecordTableCell.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.h
+c000000004B2AD51B0000000000000130
+t1261098267
+s304
+i<UIKit/UIKit.h>
+i<MapKit/MapKit.h>
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.m
+c000000004B2AD8280000000000000861
+t1261099048
+s2145
+i"SGPinAnnotationView.h"
+i"SGSocialRecord.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/MainWindow.xib
+c000000004B2AD5E800000000000020FD
+t1261098472
+s8445
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/CCLocatorDemo-Info.plist
+c000000004B2AD51B00000000000002D8
+t1261098267
+s728
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Entitlements.plist
+c000000004B2AD51B00000000000000E1
+t1261098267
+s225
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Images/BlueTargetButton.png
+c000000004B2AD51B00000000000014C7
+t1261098267
+s5319
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Images/BrightKite.png
+c000000004B2AD51B0000000000000252
+t1261098267
+s594
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Images/Crosshair.png
+c000000004B2AD51B0000000000000DAD
+t1261098267
+s3501
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Images/DefaultProfilePicture.png
+c000000004B2AD51B000000000000032D
+t1261098267
+s813
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Images/Flickr.png
+c000000004B2AD51B00000000000002DD
+t1261098267
+s733
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Images/LocateMeButton.png
+c000000004B2AD51B0000000000000FEC
+t1261098267
+s4076
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Images/Twitter.png
+c000000004B2AD51B00000000000001EC
+t1261098267
+s492
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/MainWindow.xib
+c000000004B2AD51B00000000000029CE
+t1261098267
+s10702
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/SGDemoApp-Info.plist
+c000000004B2AD85500000000000002D8
+t1261099093
+s728
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/SGDemoApp.xcdatamodel
+c000000004B2AD51B0000000000000088
+t1261098267
+s136
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/SGDemoApp_Prefix.pch
+c000000004B2AD91C0000000000000185
+t1261099292
+s389
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+i<CoreData/CoreData.h>
+i"SimpleGeo.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/SGLocatorServices.xcdatamodel
+c000000004B2AD51B0000000000000088
+t1261098267
+s136
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Settings.bundle
+c000000004B2AD51B0000000000000088
+t1261098267
+s136
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/iTunesArtwork
+c000000004B2AD51B0000000000023413
+t1261098267
+s144403
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGDemoApp.xcdatamodel
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGDemoApp_Prefix.pch
+c000000004B2AD6B70000000000000180
+t1261098679
+s384
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+i<CoreData/CoreData.h>
+i"SimpleGeo.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/Images/bg.png
+c000000004B2AD05500000000000000D8
+t1261097045
+s216
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/Images/logo.png
+c000000004B2AD0550000000000002B84
+t1261097045
+s11140
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/Images/shelf.png
+c000000004B2AD0550000000000005231
+t1261097045
+s21041
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGARNavigationViewController_h/Classes/SGARNavigationViewController/index.html
+c000000004B2AD0550000000000006BD1
+t1261097045
+s27601
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGARNavigationViewController_h/Classes/SGARNavigationViewController/toc.html
+c000000004B2AD05500000000000014B3
+t1261097045
+s5299
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGARNavigationViewController_h/Protocols/SGARNavigationViewControllerDataSource/index.html
+c000000004B2AD055000000000000578C
+t1261097045
+s22412
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGARNavigationViewController_h/Protocols/SGARNavigationViewControllerDataSource/toc.html
+c000000004B2AD0550000000000001172
+t1261097045
+s4466
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGARNavigationViewController_h/index.html
+c000000004B2AD055000000000000131C
+t1261097045
+s4892
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGARNavigationViewController_h/toc.html
+c000000004B2AD0550000000000000DFA
+t1261097045
+s3578
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGARResponder_h/Protocols/SGARResponder/index.html
+c000000004B2AD0550000000000006225
+t1261097045
+s25125
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGARResponder_h/Protocols/SGARResponder/toc.html
+c000000004B2AD0550000000000001338
+t1261097045
+s4920
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGARResponder_h/index.html
+c000000004B2AD05500000000000010BE
+t1261097045
+s4286
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGARResponder_h/toc.html
+c000000004B2AD0550000000000000CC4
+t1261097045
+s3268
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGARView_h/Classes/SGARView/index.html
+c000000004B2AD0550000000000009266
+t1261097045
+s37478
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGARView_h/Classes/SGARView/toc.html
+c000000004B2AD0550000000000001849
+t1261097045
+s6217
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGARView_h/Protocols/SGARViewDataSource/index.html
+c000000004B2AD05500000000000037AD
+t1261097045
+s14253
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGARView_h/Protocols/SGARViewDataSource/toc.html
+c000000004B2AD0550000000000000F90
+t1261097045
+s3984
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGARView_h/index.html
+c000000004B2AD0550000000000001184
+t1261097045
+s4484
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGARView_h/toc.html
+c000000004B2AD0550000000000000D82
+t1261097045
+s3458
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGAlbum_h/Protocols/SGAlbum/index.html
+c000000004B2AD05500000000000021E2
+t1261097045
+s8674
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGAlbum_h/Protocols/SGAlbum/toc.html
+c000000004B2AD0550000000000000EE0
+t1261097045
+s3808
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGAlbum_h/index.html
+c000000004B2AD0550000000000001060
+t1261097045
+s4192
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGAlbum_h/toc.html
+c000000004B2AD0550000000000000CAC
+t1261097045
+s3244
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGAnnotationViewContainer_h/Classes/SGAnnotationViewContainer/index.html
+c000000004B2AD0550000000000004BED
+t1261097045
+s19437
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGAnnotationViewContainer_h/Classes/SGAnnotationViewContainer/toc.html
+c000000004B2AD055000000000000139E
+t1261097045
+s5022
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGAnnotationViewContainer_h/index.html
+c000000004B2AD055000000000000111A
+t1261097045
+s4378
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGAnnotationViewContainer_h/toc.html
+c000000004B2AD0550000000000000CEE
+t1261097045
+s3310
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGAnnotationView_h/Classes/SGAnnotationView/index.html
+c000000004B2AD055000000000000C38D
+t1261097045
+s50061
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGAnnotationView_h/Classes/SGAnnotationView/toc.html
+c000000004B2AD0550000000000001D32
+t1261097045
+s7474
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGAnnotationView_h/Protocols/SGAnnotationViewDelegate/index.html
+c000000004B2AD0550000000000002A9D
+t1261097045
+s10909
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGAnnotationView_h/Protocols/SGAnnotationViewDelegate/toc.html
+c000000004B2AD0550000000000000ED9
+t1261097045
+s3801
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGAnnotationView_h/index.html
+c000000004B2AD0550000000000004C81
+t1261097045
+s19585
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGAnnotationView_h/toc.html
+c000000004B2AD055000000000000106A
+t1261097045
+s4202
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGAuthorization_h/Protocols/SGAuthorization/index.html
+c000000004B2AD054000000000000117F
+t1261097044
+s4479
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGAuthorization_h/Protocols/SGAuthorization/toc.html
+c000000004B2AD0540000000000000C9D
+t1261097044
+s3229
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGAuthorization_h/index.html
+c000000004B2AD05400000000000010C7
+t1261097044
+s4295
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGAuthorization_h/toc.html
+c000000004B2AD0540000000000000CCD
+t1261097044
+s3277
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGCoverFlowView_h/Classes/SGCoverFlowView/index.html
+c000000004B2AD0540000000000005A76
+t1261097044
+s23158
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGCoverFlowView_h/Classes/SGCoverFlowView/toc.html
+c000000004B2AD054000000000000147E
+t1261097044
+s5246
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGCoverFlowView_h/Protocols/SGCoverFlowViewDelegate/index.html
+c000000004B2AD0540000000000001B64
+t1261097044
+s7012
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGCoverFlowView_h/Protocols/SGCoverFlowViewDelegate/toc.html
+c000000004B2AD0540000000000000E00
+t1261097044
+s3584
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGCoverFlowView_h/index.html
+c000000004B2AD05400000000000011C2
+t1261097044
+s4546
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGCoverFlowView_h/toc.html
+c000000004B2AD0540000000000000DA8
+t1261097044
+s3496
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGEnvironmentConstants_h/index.html
+c000000004B2AD0540000000000002C9A
+t1261097044
+s11418
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGEnvironmentConstants_h/toc.html
+c000000004B2AD0540000000000000E81
+t1261097044
+s3713
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGGeoJSONEncoder_h/Classes/SGGeoJSONEncoder/index.html
+c000000004B2AD0540000000000003AAA
+t1261097044
+s15018
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGGeoJSONEncoder_h/Classes/SGGeoJSONEncoder/toc.html
+c000000004B2AD0540000000000000FBB
+t1261097044
+s4027
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGGeoJSONEncoder_h/index.html
+c000000004B2AD0540000000000001058
+t1261097044
+s4184
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGGeoJSONEncoder_h/toc.html
+c000000004B2AD0540000000000000CCA
+t1261097044
+s3274
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGLayerMapView_h/Classes/SGLayerMapView/index.html
+c000000004B2AD05400000000000042F9
+t1261097044
+s17145
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGLayerMapView_h/Classes/SGLayerMapView/toc.html
+c000000004B2AD054000000000000120C
+t1261097044
+s4620
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGLayerMapView_h/index.html
+c000000004B2AD0540000000000001044
+t1261097044
+s4164
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGLayerMapView_h/toc.html
+c000000004B2AD0540000000000000CC2
+t1261097044
+s3266
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGLayer_h/Classes/SGLayer/index.html
+c000000004B2AD0540000000000002EA6
+t1261097044
+s11942
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGLayer_h/Classes/SGLayer/toc.html
+c000000004B2AD0540000000000000F65
+t1261097044
+s3941
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGLayer_h/index.html
+c000000004B2AD054000000000000100E
+t1261097044
+s4110
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGLayer_h/toc.html
+c000000004B2AD0540000000000000CA6
+t1261097044
+s3238
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGLocationService_h/Classes/SGLocationService/index.html
+c000000004B2AD05400000000000052D5
+t1261097044
+s21205
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGLocationService_h/Classes/SGLocationService/toc.html
+c000000004B2AD05400000000000011C4
+t1261097044
+s4548
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGLocationService_h/Protocols/SGLocationServiceDelegate/index.html
+c000000004B2AD0540000000000003780
+t1261097044
+s14208
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGLocationService_h/Protocols/SGLocationServiceDelegate/toc.html
+c000000004B2AD0540000000000000F50
+t1261097044
+s3920
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGLocationService_h/index.html
+c000000004B2AD054000000000000126E
+t1261097044
+s4718
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGLocationService_h/toc.html
+c000000004B2AD0540000000000000DB4
+t1261097044
+s3508
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGLocationTypes_h/index.html
+c000000004B2AD0540000000000005B53
+t1261097044
+s23379
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGLocationTypes_h/toc.html
+c000000004B2AD05400000000000011D8
+t1261097044
+s4568
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGMovableStack_h/Classes/SGMovableStack/index.html
+c000000004B2AD0540000000000004E19
+t1261097044
+s19993
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGMovableStack_h/Classes/SGMovableStack/toc.html
+c000000004B2AD054000000000000118B
+t1261097044
+s4491
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGMovableStack_h/index.html
+c000000004B2AD05400000000000010BE
+t1261097044
+s4286
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGMovableStack_h/toc.html
+c000000004B2AD0540000000000000CC2
+t1261097044
+s3266
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGOAuth_h/Classes/SGOAuth/index.html
+c000000004B2AD054000000000000285C
+t1261097044
+s10332
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGOAuth_h/Classes/SGOAuth/toc.html
+c000000004B2AD0540000000000000F18
+t1261097044
+s3864
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGOAuth_h/index.html
+c000000004B2AD054000000000000101C
+t1261097044
+s4124
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGOAuth_h/toc.html
+c000000004B2AD0540000000000000CA6
+t1261097044
+s3238
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGRadar_h/Classes/SGRadar/index.html
+c000000004B2AD05400000000000061D6
+t1261097044
+s25046
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGRadar_h/Classes/SGRadar/toc.html
+c000000004B2AD054000000000000146A
+t1261097044
+s5226
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGRadar_h/index.html
+c000000004B2AD0540000000000001B66
+t1261097044
+s7014
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGRadar_h/toc.html
+c000000004B2AD0540000000000000D88
+t1261097044
+s3464
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGRecordAnnotation_h/Protocols/SGAnnotation/index.html
+c000000004B2AD054000000000000125D
+t1261097044
+s4701
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGRecordAnnotation_h/Protocols/SGAnnotation/toc.html
+c000000004B2AD0540000000000000C99
+t1261097044
+s3225
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGRecordAnnotation_h/Protocols/SGRecordAnnotation/index.html
+c000000004B2AD05400000000000046EF
+t1261097044
+s18159
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGRecordAnnotation_h/Protocols/SGRecordAnnotation/toc.html
+c000000004B2AD054000000000000124B
+t1261097044
+s4683
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGRecordAnnotation_h/index.html
+c000000004B2AD05400000000000011C3
+t1261097044
+s4547
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGRecordAnnotation_h/toc.html
+c000000004B2AD0540000000000000D57
+t1261097044
+s3415
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGRecord_h/Classes/SGRecord/index.html
+c000000004B2AD0540000000000004DB1
+t1261097044
+s19889
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGRecord_h/Classes/SGRecord/toc.html
+c000000004B2AD05400000000000012D1
+t1261097044
+s4817
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGRecord_h/index.html
+c000000004B2AD0540000000000001010
+t1261097044
+s4112
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGRecord_h/toc.html
+c000000004B2AD0540000000000000CAA
+t1261097044
+s3242
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/SGiPhoneSDK.html
+c000000004B2AD0540000000000008BA8
+t1261097044
+s35752
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/css/TOCmaster.css
+c000000004B2AD04B00000000000001A4
+t1261097035
+s420
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/this_hdoc/index.html
+c000000004B2AD054000000000000104A
+t1261097044
+s4170
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Documentation/this_hdoc/toc.html
+c000000004B2AD0540000000000000BA8
+t1261097044
+s2984
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers/SGARNavigationViewController.h
+c000000004B2AD04B00000000000024CC
+t1261097035
+s9420
+i<UIKit/UIKit.h>
+i"SGRecord.h"
+i"SGARView.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers/SGARView.h
+c000000004B2AD04B0000000000002275
+t1261097035
+s8821
+i<CoreLocation/CoreLocation.h>
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers/SGAlbum.h
+c000000004B2AD04B000000000000043C
+t1261097035
+s1084
+i<UIKit/UIKit.h>
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers/SGAnnotationView.h
+c000000004B2AD04B0000000000003233
+t1261097035
+s12851
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers/SGAnnotationViewContainer.h
+c000000004B2AD04B0000000000000B17
+t1261097035
+s2839
+i<UIKit/UIKit.h>
+i"SGAnnotationView.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers/SGAuthorization.h
+c000000004B2AD04B000000000000026F
+t1261097035
+s623
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers/SGCoverFlowView.h
+c000000004B2AD04B0000000000000DEA
+t1261097035
+s3562
+i<UIKit/UIKit.h>
+i<QuartzCore/QuartzCore.h>
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers/SGEnvironmentConstants.h
+c000000004B2AD04B000000000000059B
+t1261097035
+s1435
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers/SGGeoJSONEncoder.h
+c000000004B2AD04B0000000000000BEB
+t1261097035
+s3051
+i<Foundation/Foundation.h>
+i"SGRecordAnnotation.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers/SGLayer.h
+c000000004B2AD04B00000000000021CD
+t1261097035
+s8653
+i<Foundation/Foundation.h>
+i"SGLocationTypes.h"
+i"SGLocationService.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers/SGLayerMapView.h
+c000000004B2AD04B0000000000000977
+t1261097035
+s2423
+i<MapKit/MapKit.h>
+i"SGLayer.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers/SGLocationService.h
+c000000004B2AD04B0000000000003B2C
+t1261097035
+s15148
+i<Foundation/Foundation.h>
+i"SGRecordAnnotation.h"
+i"SGLocationTypes.h"
+i"SGAuthorization.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers/SGLocationTypes.h
+c000000004B2AD04B00000000000004BF
+t1261097035
+s1215
+i<Foundation/Foundation.h>
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers/SGMovableStack.h
+c000000004B2AD04B0000000000000AD5
+t1261097035
+s2773
+i<UIKit/UIKit.h>
+i"SGAnnotationView.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers/SGOAuth.h
+c000000004B2AD04B0000000000000529
+t1261097035
+s1321
+i<Foundation/Foundation.h>
+i"SGAuthorization.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers/SGRadar.h
+c000000004B2AD04B0000000000001264
+t1261097035
+s4708
+i<UIKit/UIKit.h>
+i"SGAnnotationView.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers/SGRecord.h
+c000000004B2AD04B0000000000000EBB
+t1261097035
+s3771
+i<Foundation/Foundation.h>
+i<MapKit/MapKit.h>
+i"SGRecordAnnotation.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers/SGRecordAnnotation.h
+c000000004B2AD04B0000000000001220
+t1261097035
+s4640
+i<MapKit/MapKit.h>
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers/SimpleGeo.h
+c000000004B2AD04B0000000000000859
+t1261097035
+s2137
+i"SGRecord.h"
+i"SGLayer.h"
+i"SGRecordAnnotation.h"
+i"SGEnvironmentConstants.h"
+i"SGARNavigationViewController.h"
+i"SGRadar.h"
+i"SGAnnotationView.h"
+i"SGMovableStack.h"
+i"SGLayerMapView.h"
+i"SGAnnotationViewContainer.h"
+i"SGARView.h"
+i"SGLocationService.h"
+i"SGLocationTypes.h"
+i"SGAuthorization.h"
+i"SGGeoJSONEncoder.h"
+i"SGOAuth.h"
+i"SGCoverFlowView.h"
+i"SGAlbum.h"
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGBluePin.png
+c000000004B2AD0360000000000001056
+t1261097014
+s4182
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGBottomInspectorBackground.png
+c000000004B2AD0360000000000001431
+t1261097014
+s5169
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGCloseButton.png
+c000000004B2AD036000000000000126B
+t1261097014
+s4715
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGDefaultContainer.png
+c000000004B2AD0360000000000001E23
+t1261097014
+s7715
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGDefaultProfilePicture.png
+c000000004B2AD036000000000000032D
+t1261097014
+s813
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGDefaultRadarBackground.png
+c000000004B2AD0360000000000000BEC
+t1261097014
+s3052
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGDefaultRadarCurrentLocation.png
+c000000004B2AD03600000000000000A1
+t1261097014
+s161
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGDefaultRadarTargetImage.png
+c000000004B2AD0360000000000001AAC
+t1261097014
+s6828
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGDefaultSelectedContainer.png
+c000000004B2AD0360000000000003637
+t1261097014
+s13879
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGGlassTargetBackground.png
+c000000004B2AD0360000000000001D9A
+t1261097014
+s7578
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGMiddleInspectorBackground.png
+c000000004B2AD03600000000000010E4
+t1261097014
+s4324
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGRedPin.png
+c000000004B2AD0360000000000001053
+t1261097014
+s4179
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGTopInspectorBackground.png
+c000000004B2AD03600000000000015D4
+t1261097014
+s5588
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/README
+c000000004B2AD92C0000000000001285
+t1261099308
+s4741
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/iphoneos/libSGiPhoneSDK.a
+c000000004B2AD04A000000000011EEE8
+t1261097034
+s1175272
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/iphonesimulator/libSGiPhoneSDK.a
+c000000004B2AD04A00000000000E7728
+t1261097034
+s948008
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app
+t1261099438
+s1156
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app.dSYM
+t1261099438
+s102
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/BlueTargetButton.png
+t1261098860
+s5319
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/BrightKite.png
+t1261098860
+s594
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/CCLocatorDemo-Info.plist
+t1261098860
+s397
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/Crosshair.png
+t1261098860
+s3501
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/DefaultProfilePicture.png
+t1261098860
+s813
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/Entitlements.plist
+t1261098860
+s62
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/Flickr.png
+t1261098860
+s733
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/Info.plist
+t1261099165
+s504
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/LocateMeButton.png
+t1261098860
+s4076
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/MainWindow.nib
+t1261098860
+s2098
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/PkgInfo
+t1261099165
+s8
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/README
+t1261099308
+s4741
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGBluePin.png
+t1261098860
+s4182
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGBottomInspectorBackground.png
+t1261098860
+s5169
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGCloseButton.png
+t1261098860
+s4715
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDefaultContainer.png
+t1261098860
+s7715
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDefaultProfilePicture.png
+t1261098860
+s813
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDefaultRadarBackground.png
+t1261098860
+s3052
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDefaultRadarCurrentLocation.png
+t1261098860
+s161
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDefaultRadarTargetImage.png
+t1261098860
+s6828
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDefaultSelectedContainer.png
+t1261098860
+s13879
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDemoApp
+t1261099438
+s333324
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDemoApp-Info.plist
+t1261099094
+s397
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDemoApp.mom
+t1261099139
+s5671
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGGlassTargetBackground.png
+t1261098860
+s7578
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGLocatorServices.mom
+t1261098861
+s5671
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGMiddleInspectorBackground.png
+t1261098860
+s4324
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGRedPin.png
+t1261098860
+s4179
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGTopInspectorBackground.png
+t1261098860
+s5588
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGiPhoneSDK.html
+t2
+s0
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/Settings.bundle
+t1261098860
+s136
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/TOCmaster.css
+t2
+s0
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/Twitter.png
+t1261098860
+s492
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/bg.png
+t2
+s0
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/iTunesArtwork
+t1261098860
+s144403
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/index.html
+t2
+s0
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/logo.png
+t2
+s0
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/shelf.png
+t2
+s0
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/toc.html
+t2
+s0
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGBrightkite.o
+t1261099351
+s21240
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGDemoApp.LinkFileList
+c000000004B2AD6A20000000000000AA0
+t1261098658
+s2720
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGDemoAppAppDelegate.o
+t2
+s0
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGDemoAppDelegate.o
+t1261099352
+s56576
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGEntityDescriptions.o
+t1261099310
+s14644
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGFlickr.o
+t1261099352
+s19312
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGGeoNames.o
+t1261099352
+s15772
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGMainViewController.o
+t1261099352
+s105468
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGManagedRecord.o
+t1261099352
+s26456
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGModelController.o
+t1261099352
+s25296
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGPinAnnotationView.o
+t1261099352
+s22760
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGSocialRecord.o
+t1261099352
+s25272
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGSocialRecordTableCell.o
+t1261099357
+s26424
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGSpecificLayer.o
+t1261099351
+s16896
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGTweet.o
+t1261099352
+s17944
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGUSWeather.o
+t1261099352
+s8376
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGUSZip.o
+t1261099352
+s16000
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGWebViewController.o
+t1261099309
+s33144
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/main.o
+t1261099309
+s6004
+
+N/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/main.m
+c000000004B2AD51B0000000000000164
+t1261098267
+s356
+i<UIKit/UIKit.h>
+
+N/var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-aodnmixzjtrbpzevbtvqlwbwezjt/SGDemoApp_Prefix.pch.gch
+t1261098659
+s13887728
+
+N/var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-ckzpbumcrpuhnkfcefocmnsuizih/SGDemoApp_Prefix.pch.gch
+t1261099019
+s14819312
+
+N/var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fsyvegjtzwdntpbmlgrvlwzxqnok/SGDemoApp_Prefix.pch.gch
+t1261098861
+s14819312
+
+N/var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fyakxpubermcezhgdiqmjsmlusmb/SGDemoApp_Prefix.pch.gch
+t1261099309
+s14819312
+
+N/var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-gpceperarghhklchwmmpvgfjqpju/SGDemoApp_Prefix.pch.gch
+t2
+s0
+
+NResources/SGDemoApp-Info.plist
+c000000004B2AD85500000000000002D8
+t1261099093
+s728
+
+NSGDemoApp-Info.plist
+c00000000000000000000000000000000
+t2
+s0
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies282792238#282792238#0(126"[WARN]Warning: The Copy Bundle Resources build phase contains this target's Info.plist file 'Resources/SGDemoApp-Info.plist'.1(22@119"Warning: The Copy Bundle Resources build phase contains this target's Info.plist file 'Resources/SGDemoApp-Info.plist'.282792238#18446744073709551615#0#0(1@0"0(0#1#0"4300885448#0"0#
+
+CCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGBrightkite.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGBrightkite.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s282792151.926553
+e282792151.998025
+r1
+xCompileC
+xbuild/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGBrightkite.o
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGBrightkite.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@107"Compile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGBrightkite.m282792151#282792152#0(0"0(0#0#99"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGBrightkite.m4300885448#2386"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-generated-files.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-own-target-headers.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-all-target-headers.hmap -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-project-headers.hmap -F/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/include -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources/i386 -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources -include /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fyakxpubermcezhgdiqmjsmlusmb/SGDemoApp_Prefix.pch -c /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGBrightkite.m -o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGBrightkite.o0#
+
+CCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGDemoAppAppDelegate.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/SGDemoAppAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGDemoAppDelegate.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/SGDemoAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s282792152.417276
+e282792152.545544
+r1
+xCompileC
+xbuild/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGDemoAppDelegate.o
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/SGDemoAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@98"Compile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/SGDemoAppDelegate.m282792152#282792152#0(0"0(0#0#90"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/SGDemoAppDelegate.m4300885448#2382"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-generated-files.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-own-target-headers.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-all-target-headers.hmap -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-project-headers.hmap -F/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/include -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources/i386 -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources -include /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fyakxpubermcezhgdiqmjsmlusmb/SGDemoApp_Prefix.pch -c /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/SGDemoAppDelegate.m -o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGDemoAppDelegate.o0#
+
+CCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGEntityDescriptions.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGEntityDescriptions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s282792110.355714
+e282792110.453897
+r1
+xCompileC
+xbuild/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGEntityDescriptions.o
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGEntityDescriptions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@107"Compile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGEntityDescriptions.m282792110#282792110#0(0"0(0#0#99"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGEntityDescriptions.m4300885448#2394"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-generated-files.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-own-target-headers.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-all-target-headers.hmap -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-project-headers.hmap -F/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/include -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources/i386 -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources -include /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fyakxpubermcezhgdiqmjsmlusmb/SGDemoApp_Prefix.pch -c /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGEntityDescriptions.m -o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGEntityDescriptions.o0#
+
+CCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGFlickr.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGFlickr.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s282792151.998137
+e282792152.091880
+r1
+xCompileC
+xbuild/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGFlickr.o
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGFlickr.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@103"Compile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGFlickr.m282792151#282792152#0(0"0(0#0#95"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGFlickr.m4300885448#2378"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-generated-files.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-own-target-headers.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-all-target-headers.hmap -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-project-headers.hmap -F/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/include -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources/i386 -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources -include /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fyakxpubermcezhgdiqmjsmlusmb/SGDemoApp_Prefix.pch -c /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGFlickr.m -o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGFlickr.o0#
+
+CCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGGeoNames.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGGeoNames.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s282792152.085092
+e282792152.190922
+r1
+xCompileC
+xbuild/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGGeoNames.o
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGGeoNames.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGGeoNames.m: In function '-[SGGeoNames elevation]':
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGGeoNames.m:56: warning: incompatible Objective-C types initializing 'struct NSData *', expected 'struct NSNumber *'
+lSLF07#2@105"Compile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGGeoNames.m282792152#282792152#0(341"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGGeoNames.m: In function '-[SGGeoNames elevation]':/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGGeoNames.m:56: warning: incompatible Objective-C types initializing 'struct NSData *', expected 'struct NSNumber *'1(22@91"Incompatible Objective-C types initializing 'struct NSData *', expected 'struct NSNumber *'282792152#138#203#0(6@97"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGGeoNames.m282791067#56#0#56#0#61"incompatible Objective-C types initializing '*', expected '*'0(0#0#97"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGGeoNames.m4300885448#2382"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-generated-files.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-own-target-headers.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-all-target-headers.hmap -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-project-headers.hmap -F/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/include -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources/i386 -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources -include /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fyakxpubermcezhgdiqmjsmlusmb/SGDemoApp_Prefix.pch -c /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGGeoNames.m -o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGGeoNames.o0#
+
+CCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGMainViewController.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Controllers/SGMainViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s282792151.854284
+e282792152.084987
+r1
+xCompileC
+xbuild/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGMainViewController.o
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Controllers/SGMainViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@113"Compile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Controllers/SGMainViewController.m282792151#282792152#0(0"0(0#0#105"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Controllers/SGMainViewController.m4300885448#2400"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-generated-files.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-own-target-headers.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-all-target-headers.hmap -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-project-headers.hmap -F/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/include -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources/i386 -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources -include /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fyakxpubermcezhgdiqmjsmlusmb/SGDemoApp_Prefix.pch -c /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Controllers/SGMainViewController.m -o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGMainViewController.o0#
+
+CCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGManagedRecord.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGManagedRecord.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s282792152.299347
+e282792152.417172
+r1
+xCompileC
+xbuild/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGManagedRecord.o
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGManagedRecord.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@102"Compile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGManagedRecord.m282792152#282792152#0(0"0(0#0#94"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGManagedRecord.m4300885448#2384"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-generated-files.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-own-target-headers.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-all-target-headers.hmap -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-project-headers.hmap -F/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/include -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources/i386 -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources -include /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fyakxpubermcezhgdiqmjsmlusmb/SGDemoApp_Prefix.pch -c /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGManagedRecord.m -o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGManagedRecord.o0#
+
+CCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGModelController.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGModelController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s282792152.350457
+e282792152.457585
+r1
+xCompileC
+xbuild/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGModelController.o
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGModelController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@104"Compile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGModelController.m282792152#282792152#0(0"0(0#0#96"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGModelController.m4300885448#2388"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-generated-files.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-own-target-headers.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-all-target-headers.hmap -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-project-headers.hmap -F/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/include -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources/i386 -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources -include /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fyakxpubermcezhgdiqmjsmlusmb/SGDemoApp_Prefix.pch -c /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/SGModelController.m -o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGModelController.o0#
+
+CCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGPinAnnotationView.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s282792152.535828
+e282792152.613575
+r1
+xCompileC
+xbuild/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGPinAnnotationView.o
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.m: In function '-[SGPinAnnotationView initWithAnnotation:reuseIdentifier:]':
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.m:25: warning: 'UIImage' may not respond to '+roundedImageWithImage:cornerWidth:cornerHeight:scaleSize:'
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.m:25: warning: (Messages without a matching method signature
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.m:25: warning: will be assumed to return 'id' and accept
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.m:25: warning: '...' as arguments.)
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.m: In function '-[SGPinAnnotationView layoutSubviews]':
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.m:64: warning: 'UIImage' may not respond to '+roundedImageWithImage:cornerWidth:cornerHeight:scaleSize:'
+lSLF07#2@106"Compile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.m282792152#282792152#0(1176"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.m: In function '-[SGPinAnnotationView initWithAnnotation:reuseIdentifier:]':/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.m:25: warning: 'UIImage' may not respond to '+roundedImageWithImage:cornerWidth:cornerHeight:scaleSize:'/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.m:25: warning: (Messages without a matching method signature/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.m:25: warning: will be assumed to return 'id' and accept/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.m:25: warning: '...' as arguments.)/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.m: In function '-[SGPinAnnotationView layoutSubviews]':/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.m:64: warning: 'UIImage' may not respond to '+roundedImageWithImage:cornerWidth:cornerHeight:scaleSize:'3(22@89"'UIImage' may not respond to '+roundedImageWithImage:cornerWidth:cornerHeight:scaleSize:'282792152#174#202#0(6@98"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.m282791848#25#0#25#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)282792152#376#158#0(6@98"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.m282791848#25#0#25#0#0"0(22@89"'UIImage' may not respond to '+roundedImageWithImage:cornerWidth:cornerHeight:scaleSize:'282792152#974#202#0(6@98"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.m282791848#64#0#64#0#26"'*' may not respond to '*'0(0#0#98"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.m4300885448#2392"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-generated-files.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-own-target-headers.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-all-target-headers.hmap -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-project-headers.hmap -F/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/include -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources/i386 -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources -include /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fyakxpubermcezhgdiqmjsmlusmb/SGDemoApp_Prefix.pch -c /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Views/SGPinAnnotationView.m -o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGPinAnnotationView.o0#
+
+CCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGSocialRecord.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s282792152.091981
+e282792152.233520
+r1
+xCompileC
+xbuild/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGSocialRecord.o
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m: In function '-[SGSocialRecord photo:]':
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m:126: warning: 'SGSocialRecord' may not respond to '-setPrimitivePhotoData:'
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m:126: warning: (Messages without a matching method signature
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m:126: warning: will be assumed to return 'id' and accept
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m:126: warning: '...' as arguments.)
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m: In function '-[SGSocialRecord photo]':
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m:140: warning: 'SGSocialRecord' may not respond to '-primitivePhotoData'
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m: In function '-[SGSocialRecord name]':
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m:154: warning: 'SGSocialRecord' may not respond to '-primitiveName'
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m: At top level:
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m:222: warning: property 'name' requires the method 'setName:' to be defined - use @synthesize, @dynamic or provide a method implementation
+lSLF07#2@109"Compile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m282792152#282792152#0(1761"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m: In function '-[SGSocialRecord photo:]':/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m:126: warning: 'SGSocialRecord' may not respond to '-setPrimitivePhotoData:'/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m:126: warning: (Messages without a matching method signature/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m:126: warning: will be assumed to return 'id' and accept/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m:126: warning: '...' as arguments.)/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m: In function '-[SGSocialRecord photo]':/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m:140: warning: 'SGSocialRecord' may not respond to '-primitivePhotoData'/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m: In function '-[SGSocialRecord name]':/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m:154: warning: 'SGSocialRecord' may not respond to '-primitiveName'/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m: At top level:/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m:222: warning: property 'name' requires the method 'setName:' to be defined - use @synthesize, @dynamic or provide a method implementation6(22@61"'SGSocialRecord' may not respond to '-setPrimitivePhotoData:'282792152#143#178#0(6@101"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m282791067#126#0#126#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)282792152#321#162#0(6@101"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m282791067#126#0#126#0#0"0(22@57"'SGSocialRecord' may not respond to '-primitivePhotoData'282792152#920#174#0(6@101"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m282791067#140#0#140#0#26"'*' may not respond to '*'0(22@52"'SGSocialRecord' may not respond to '-primitiveName'282792152#1235#169#0(6@101"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m282791067#154#0#154#0#26"'*' may not respond to '*'0(23@13"At top level:282792152#1404#117#0(6@101"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m282791067#0#0#0#0#0"0(22@123"Property 'name' requires the method 'setName:' to be defined - use @synthesize, @dynamic or provide a method implementation282792152#1521#240#0(6@101"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m282791067#222#0#222#0#0"0(0#0#101"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m4300885448#2390"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-generated-files.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-own-target-headers.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-all-target-headers.hmap -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-project-headers.hmap -F/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/include -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources/i386 -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources -include /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fyakxpubermcezhgdiqmjsmlusmb/SGDemoApp_Prefix.pch -c /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGSocialRecord.m -o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGSocialRecord.o0#
+
+CCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGSocialRecordTableCell.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s282792157.277703
+e282792157.409747
+r1
+xCompileC
+xbuild/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGSocialRecordTableCell.o
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.m: In function '-[SGSocialRecordTableCell initWithStyle:reuseIdentifier:]':
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.m:23: warning: 'UIImage' may not respond to '+imageWithImage:scaledToSize:'
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.m:23: warning: (Messages without a matching method signature
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.m:23: warning: will be assumed to return 'id' and accept
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.m:23: warning: '...' as arguments.)
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.m: In function '-[SGSocialRecordTableCell setUserProfile:]':
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.m:47: warning: 'UIImage' may not respond to '+imageWithImage:scaledToSize:'
+lSLF07#2@115"Compile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.m282792157#282792157#0(1185"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.m: In function '-[SGSocialRecordTableCell initWithStyle:reuseIdentifier:]':/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.m:23: warning: 'UIImage' may not respond to '+imageWithImage:scaledToSize:'/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.m:23: warning: (Messages without a matching method signature/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.m:23: warning: will be assumed to return 'id' and accept/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.m:23: warning: '...' as arguments.)/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.m: In function '-[SGSocialRecordTableCell setUserProfile:]':/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.m:47: warning: 'UIImage' may not respond to '+imageWithImage:scaledToSize:'3(22@60"'UIImage' may not respond to '+imageWithImage:scaledToSize:'282792157#182#182#0(6@107"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.m282792156#23#0#23#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)282792157#364#167#0(6@107"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.m282792156#23#0#23#0#0"0(22@60"'UIImage' may not respond to '+imageWithImage:scaledToSize:'282792157#1003#182#0(6@107"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.m282792156#47#0#47#0#26"'*' may not respond to '*'0(0#0#107"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.m4300885448#2405"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-generated-files.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-own-target-headers.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-all-target-headers.hmap -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-project-headers.hmap -F/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/include -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources/i386 -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources -include /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fyakxpubermcezhgdiqmjsmlusmb/SGDemoApp_Prefix.pch -c /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/TableCells/SGSocialRecordTableCell.m -o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGSocialRecordTableCell.o0#
+
+CCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGSpecificLayer.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Layers/SGSpecificLayer.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s282792151.856553
+e282792151.926451
+r1
+xCompileC
+xbuild/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGSpecificLayer.o
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Layers/SGSpecificLayer.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Layers/SGSpecificLayer.m: In function '-[SGSpecificLayer recordAnnotationFromGeoJSONDictionary:]':
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Layers/SGSpecificLayer.m:34: warning: no '+entityDescription' method found
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Layers/SGSpecificLayer.m:34: warning: (Messages without a matching method signature
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Layers/SGSpecificLayer.m:34: warning: will be assumed to return 'id' and accept
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Layers/SGSpecificLayer.m:34: warning: '...' as arguments.)
+lSLF07#2@109"Compile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Layers/SGSpecificLayer.m282792151#282792151#0(782"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Layers/SGSpecificLayer.m: In function '-[SGSpecificLayer recordAnnotationFromGeoJSONDictionary:]':/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Layers/SGSpecificLayer.m:34: warning: no '+entityDescription' method found/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Layers/SGSpecificLayer.m:34: warning: (Messages without a matching method signature/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Layers/SGSpecificLayer.m:34: warning: will be assumed to return 'id' and accept/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Layers/SGSpecificLayer.m:34: warning: '...' as arguments.)2(22@36"No '+entityDescription' method found282792151#176#152#0(6@101"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Layers/SGSpecificLayer.m282791067#34#0#34#0#19"no '*' method found0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)282792151#328#161#0(6@101"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Layers/SGSpecificLayer.m282791067#34#0#34#0#0"0(0#0#101"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Layers/SGSpecificLayer.m4300885448#2391"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-generated-files.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-own-target-headers.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-all-target-headers.hmap -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-project-headers.hmap -F/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/include -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources/i386 -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources -include /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fyakxpubermcezhgdiqmjsmlusmb/SGDemoApp_Prefix.pch -c /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Layers/SGSpecificLayer.m -o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGSpecificLayer.o0#
+
+CCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGTweet.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGTweet.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s282792152.191054
+e282792152.273708
+r1
+xCompileC
+xbuild/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGTweet.o
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGTweet.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@102"Compile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGTweet.m282792152#282792152#0(0"0(0#0#94"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGTweet.m4300885448#2376"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-generated-files.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-own-target-headers.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-all-target-headers.hmap -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-project-headers.hmap -F/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/include -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources/i386 -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources -include /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fyakxpubermcezhgdiqmjsmlusmb/SGDemoApp_Prefix.pch -c /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGTweet.m -o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGTweet.o0#
+
+CCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGUSWeather.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGUSWeather.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s282792152.233625
+e282792152.299102
+r1
+xCompileC
+xbuild/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGUSWeather.o
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGUSWeather.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@106"Compile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGUSWeather.m282792152#282792152#0(0"0(0#0#98"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGUSWeather.m4300885448#2384"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-generated-files.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-own-target-headers.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-all-target-headers.hmap -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-project-headers.hmap -F/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/include -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources/i386 -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources -include /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fyakxpubermcezhgdiqmjsmlusmb/SGDemoApp_Prefix.pch -c /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGUSWeather.m -o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGUSWeather.o0#
+
+CCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGUSZip.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGUSZip.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s282792152.273876
+e282792152.350357
+r1
+xCompileC
+xbuild/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGUSZip.o
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGUSZip.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGUSZip.m: In function '-[SGUSZip elevation]':
+o/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGUSZip.m:61: warning: incompatible Objective-C types initializing 'struct NSData *', expected 'struct NSNumber *'
+lSLF07#2@102"Compile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGUSZip.m282792152#282792152#0(332"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGUSZip.m: In function '-[SGUSZip elevation]':/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGUSZip.m:61: warning: incompatible Objective-C types initializing 'struct NSData *', expected 'struct NSNumber *'1(22@91"Incompatible Objective-C types initializing 'struct NSData *', expected 'struct NSNumber *'282792152#132#200#0(6@94"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGUSZip.m282791067#61#0#61#0#61"incompatible Objective-C types initializing '*', expected '*'0(0#0#94"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGUSZip.m4300885448#2376"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-generated-files.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-own-target-headers.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-all-target-headers.hmap -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-project-headers.hmap -F/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/include -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources/i386 -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources -include /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fyakxpubermcezhgdiqmjsmlusmb/SGDemoApp_Prefix.pch -c /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Model/Records/SGUSZip.m -o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGUSZip.o0#
+
+CCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGWebViewController.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Controllers/SGWebViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s282792109.850513
+e282792109.987004
+r1
+xCompileC
+xbuild/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGWebViewController.o
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Controllers/SGWebViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@112"Compile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Controllers/SGWebViewController.m282792109#282792109#0(0"0(0#0#104"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Controllers/SGWebViewController.m4300885448#2398"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-generated-files.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-own-target-headers.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-all-target-headers.hmap -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-project-headers.hmap -F/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/include -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources/i386 -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources -include /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fyakxpubermcezhgdiqmjsmlusmb/SGDemoApp_Prefix.pch -c /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Classes/Controllers/SGWebViewController.m -o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGWebViewController.o0#
+
+CCompileC build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/main.o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s282792109.762887
+e282792109.850406
+r1
+xCompileC
+xbuild/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/main.o
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/main.m282792109#282792109#0(0"0(0#0#69"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/main.m4300885448#2348"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-generated-files.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-own-target-headers.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-all-target-headers.hmap -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-project-headers.hmap -F/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/include -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources/i386 -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources -include /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fyakxpubermcezhgdiqmjsmlusmb/SGDemoApp_Prefix.pch -c /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/main.m -o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/MainWindow.xib
+s282791458.093605
+e282791458.364291
+r1
+xCompileXIB
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib282791458#282791458#0(0"0(0#0#77"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/MainWindow.xib4300885448#656"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/MainWindow.nib /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/MainWindow.xib0#
+
+CCompileXIB /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/MainWindow.xib
+s282791660.643325
+e282791660.965907
+r1
+xCompileXIB
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/MainWindow.xib
+lSLF07#2@35"CompileXIB Resources/MainWindow.xib282791660#282791660#0(0"0(0#0#87"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/MainWindow.xib4300885448#666"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/MainWindow.nib /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/MainWindow.xib0#
+
+CCopyPlistFile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/CCLocatorDemo-Info.plist Resources/CCLocatorDemo-Info.plist
+s282791660.594664
+e282791660.645492
+r1
+xCopyPlistFile
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/CCLocatorDemo-Info.plist
+xResources/CCLocatorDemo-Info.plist
+lSLF07#2@39"Copy Resources/CCLocatorDemo-Info.plist282791660#282791660#0(0"0(0#0#97"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/CCLocatorDemo-Info.plist4300885448#559"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copyplist --convert binary1 Resources/CCLocatorDemo-Info.plist --outdir /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCopyPlistFile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/Entitlements.plist Resources/Entitlements.plist
+s282791660.596291
+e282791660.619810
+r1
+xCopyPlistFile
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/Entitlements.plist
+xResources/Entitlements.plist
+lSLF07#2@33"Copy Resources/Entitlements.plist282791660#282791660#0(0"0(0#0#91"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Entitlements.plist4300885448#553"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copyplist --convert binary1 Resources/Entitlements.plist --outdir /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCopyPlistFile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDemoApp-Info.plist Resources/SGDemoApp-Info.plist
+s282791894.555183
+e282791894.576473
+r1
+xCopyPlistFile
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDemoApp-Info.plist
+xResources/SGDemoApp-Info.plist
+lSLF07#2@35"Copy Resources/SGDemoApp-Info.plist282791894#282791894#0(0"0(0#0#93"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/SGDemoApp-Info.plist4300885448#555"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copyplist --convert binary1 Resources/SGDemoApp-Info.plist --outdir /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/BlueTargetButton.png Resources/Images/BlueTargetButton.png
+s282791660.619914
+e282791660.645620
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SGDemoApp.app/BlueTargetButton.png
+xResources/Images/BlueTargetButton.png
+lSLF07#2@42"Copy Resources/Images/BlueTargetButton.png282791660#282791660#0(0"0(0#0#100"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Images/BlueTargetButton.png4300885448#655"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Images/BlueTargetButton.png /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/BrightKite.png Resources/Images/BrightKite.png
+s282791660.620988
+e282791660.645721
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SGDemoApp.app/BrightKite.png
+xResources/Images/BrightKite.png
+lSLF07#2@36"Copy Resources/Images/BrightKite.png282791660#282791660#0(0"0(0#0#94"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Images/BrightKite.png4300885448#649"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Images/BrightKite.png /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/Crosshair.png Resources/Images/Crosshair.png
+s282791660.621636
+e282791660.645821
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SGDemoApp.app/Crosshair.png
+xResources/Images/Crosshair.png
+lSLF07#2@35"Copy Resources/Images/Crosshair.png282791660#282791660#0(0"0(0#0#93"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Images/Crosshair.png4300885448#648"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Images/Crosshair.png /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/DefaultProfilePicture.png Resources/Images/DefaultProfilePicture.png
+s282791660.623275
+e282791660.645923
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SGDemoApp.app/DefaultProfilePicture.png
+xResources/Images/DefaultProfilePicture.png
+lSLF07#2@47"Copy Resources/Images/DefaultProfilePicture.png282791660#282791660#0(0"0(0#0#105"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Images/DefaultProfilePicture.png4300885448#660"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Images/DefaultProfilePicture.png /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/Flickr.png Resources/Images/Flickr.png
+s282791660.625088
+e282791660.646023
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SGDemoApp.app/Flickr.png
+xResources/Images/Flickr.png
+lSLF07#2@32"Copy Resources/Images/Flickr.png282791660#282791660#0(0"0(0#0#90"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Images/Flickr.png4300885448#645"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Images/Flickr.png /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/LocateMeButton.png Resources/Images/LocateMeButton.png
+s282791660.627054
+e282791660.650580
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SGDemoApp.app/LocateMeButton.png
+xResources/Images/LocateMeButton.png
+lSLF07#2@40"Copy Resources/Images/LocateMeButton.png282791660#282791660#0(0"0(0#0#98"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Images/LocateMeButton.png4300885448#653"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Images/LocateMeButton.png /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/README SGiPhoneSDK/README
+s282792108.882349
+e282792108.888049
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SGDemoApp.app/README
+xSGiPhoneSDK/README
+lSLF07#2@23"Copy SGiPhoneSDK/README282792108#282792108#0(0"0(0#0#81"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/README4300885448#636"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/README /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGBluePin.png SGiPhoneSDK/Images/SGBluePin.png
+s282791660.656360
+e282791660.708547
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SGDemoApp.app/SGBluePin.png
+xSGiPhoneSDK/Images/SGBluePin.png
+lSLF07#2@37"Copy SGiPhoneSDK/Images/SGBluePin.png282791660#282791660#0(0"0(0#0#95"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGBluePin.png4300885448#650"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGBluePin.png /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGBottomInspectorBackground.png SGiPhoneSDK/Images/SGBottomInspectorBackground.png
+s282791660.658398
+e282791660.706123
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SGDemoApp.app/SGBottomInspectorBackground.png
+xSGiPhoneSDK/Images/SGBottomInspectorBackground.png
+lSLF07#2@55"Copy SGiPhoneSDK/Images/SGBottomInspectorBackground.png282791660#282791660#0(0"0(0#0#113"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGBottomInspectorBackground.png4300885448#668"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGBottomInspectorBackground.png /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGCloseButton.png SGiPhoneSDK/Images/SGCloseButton.png
+s282791660.660190
+e282791660.672384
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SGDemoApp.app/SGCloseButton.png
+xSGiPhoneSDK/Images/SGCloseButton.png
+lSLF07#2@41"Copy SGiPhoneSDK/Images/SGCloseButton.png282791660#282791660#0(0"0(0#0#99"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGCloseButton.png4300885448#654"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGCloseButton.png /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGDefaultContainer.png SGiPhoneSDK/Images/SGDefaultContainer.png
+s282791660.662030
+e282791660.677448
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SGDemoApp.app/SGDefaultContainer.png
+xSGiPhoneSDK/Images/SGDefaultContainer.png
+lSLF07#2@46"Copy SGiPhoneSDK/Images/SGDefaultContainer.png282791660#282791660#0(0"0(0#0#104"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGDefaultContainer.png4300885448#659"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGDefaultContainer.png /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGDefaultProfilePicture.png SGiPhoneSDK/Images/SGDefaultProfilePicture.png
+s282791660.663941
+e282791660.681094
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SGDemoApp.app/SGDefaultProfilePicture.png
+xSGiPhoneSDK/Images/SGDefaultProfilePicture.png
+lSLF07#2@51"Copy SGiPhoneSDK/Images/SGDefaultProfilePicture.png282791660#282791660#0(0"0(0#0#109"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGDefaultProfilePicture.png4300885448#664"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGDefaultProfilePicture.png /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGDefaultRadarBackground.png SGiPhoneSDK/Images/SGDefaultRadarBackground.png
+s282791660.666123
+e282791660.683518
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SGDemoApp.app/SGDefaultRadarBackground.png
+xSGiPhoneSDK/Images/SGDefaultRadarBackground.png
+lSLF07#2@52"Copy SGiPhoneSDK/Images/SGDefaultRadarBackground.png282791660#282791660#0(0"0(0#0#110"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGDefaultRadarBackground.png4300885448#665"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGDefaultRadarBackground.png /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGDefaultRadarCurrentLocation.png SGiPhoneSDK/Images/SGDefaultRadarCurrentLocation.png
+s282791660.667894
+e282791660.692169
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SGDemoApp.app/SGDefaultRadarCurrentLocation.png
+xSGiPhoneSDK/Images/SGDefaultRadarCurrentLocation.png
+lSLF07#2@57"Copy SGiPhoneSDK/Images/SGDefaultRadarCurrentLocation.png282791660#282791660#0(0"0(0#0#115"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGDefaultRadarCurrentLocation.png4300885448#670"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGDefaultRadarCurrentLocation.png /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGDefaultRadarTargetImage.png SGiPhoneSDK/Images/SGDefaultRadarTargetImage.png
+s282791660.669791
+e282791660.686834
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SGDemoApp.app/SGDefaultRadarTargetImage.png
+xSGiPhoneSDK/Images/SGDefaultRadarTargetImage.png
+lSLF07#2@53"Copy SGiPhoneSDK/Images/SGDefaultRadarTargetImage.png282791660#282791660#0(0"0(0#0#111"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGDefaultRadarTargetImage.png4300885448#666"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGDefaultRadarTargetImage.png /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGDefaultSelectedContainer.png SGiPhoneSDK/Images/SGDefaultSelectedContainer.png
+s282791660.672545
+e282791660.698480
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SGDemoApp.app/SGDefaultSelectedContainer.png
+xSGiPhoneSDK/Images/SGDefaultSelectedContainer.png
+lSLF07#2@54"Copy SGiPhoneSDK/Images/SGDefaultSelectedContainer.png282791660#282791660#0(0"0(0#0#112"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGDefaultSelectedContainer.png4300885448#667"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGDefaultSelectedContainer.png /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGGlassTargetBackground.png SGiPhoneSDK/Images/SGGlassTargetBackground.png
+s282791660.675326
+e282791660.698774
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SGDemoApp.app/SGGlassTargetBackground.png
+xSGiPhoneSDK/Images/SGGlassTargetBackground.png
+lSLF07#2@51"Copy SGiPhoneSDK/Images/SGGlassTargetBackground.png282791660#282791660#0(0"0(0#0#109"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGGlassTargetBackground.png4300885448#664"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGGlassTargetBackground.png /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGMiddleInspectorBackground.png SGiPhoneSDK/Images/SGMiddleInspectorBackground.png
+s282791660.677539
+e282791660.694337
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SGDemoApp.app/SGMiddleInspectorBackground.png
+xSGiPhoneSDK/Images/SGMiddleInspectorBackground.png
+lSLF07#2@55"Copy SGiPhoneSDK/Images/SGMiddleInspectorBackground.png282791660#282791660#0(0"0(0#0#113"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGMiddleInspectorBackground.png4300885448#668"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGMiddleInspectorBackground.png /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGRedPin.png SGiPhoneSDK/Images/SGRedPin.png
+s282791660.681185
+e282791660.703048
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SGDemoApp.app/SGRedPin.png
+xSGiPhoneSDK/Images/SGRedPin.png
+lSLF07#2@36"Copy SGiPhoneSDK/Images/SGRedPin.png282791660#282791660#0(0"0(0#0#94"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGRedPin.png4300885448#649"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGRedPin.png /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGTopInspectorBackground.png SGiPhoneSDK/Images/SGTopInspectorBackground.png
+s282791660.683609
+e282791660.709857
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SGDemoApp.app/SGTopInspectorBackground.png
+xSGiPhoneSDK/Images/SGTopInspectorBackground.png
+lSLF07#2@52"Copy SGiPhoneSDK/Images/SGTopInspectorBackground.png282791660#282791660#0(0"0(0#0#110"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGTopInspectorBackground.png4300885448#665"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Images/SGTopInspectorBackground.png /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/SGiPhoneSDK.html SGiPhoneSDK/Documentation/SGiPhoneSDK.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/Settings.bundle Resources/Settings.bundle
+s282791660.655244
+e282791660.672259
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SGDemoApp.app/Settings.bundle
+xResources/Settings.bundle
+lSLF07#2@30"Copy Resources/Settings.bundle282791660#282791660#0(0"0(0#0#88"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Settings.bundle4300885448#643"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Settings.bundle /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/TOCmaster.css SGiPhoneSDK/Documentation/css/TOCmaster.css
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/Twitter.png Resources/Images/Twitter.png
+s282791660.628864
+e282791660.654043
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SGDemoApp.app/Twitter.png
+xResources/Images/Twitter.png
+lSLF07#2@33"Copy Resources/Images/Twitter.png282791660#282791660#0(0"0(0#0#91"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Images/Twitter.png4300885448#646"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/Images/Twitter.png /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/bg.png SGiPhoneSDK/Documentation/Images/bg.png
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/iTunesArtwork Resources/iTunesArtwork
+s282791660.634638
+e282791660.655161
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SGDemoApp.app/iTunesArtwork
+xResources/iTunesArtwork
+lSLF07#2@28"Copy Resources/iTunesArtwork282791660#282791660#0(0"0(0#0#86"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/iTunesArtwork4300885448#641"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/iTunesArtwork /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGARNavigationViewController_h/Classes/SGARNavigationViewController/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGARNavigationViewController_h/Protocols/SGARNavigationViewControllerDataSource/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGARNavigationViewController_h/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGARResponder_h/Protocols/SGARResponder/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGARResponder_h/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGARView_h/Classes/SGARView/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGARView_h/Protocols/SGARViewDataSource/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGARView_h/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGAlbum_h/Protocols/SGAlbum/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGAlbum_h/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGAnnotationViewContainer_h/Classes/SGAnnotationViewContainer/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGAnnotationViewContainer_h/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGAnnotationView_h/Classes/SGAnnotationView/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGAnnotationView_h/Protocols/SGAnnotationViewDelegate/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGAnnotationView_h/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGAuthorization_h/Protocols/SGAuthorization/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGAuthorization_h/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGCoverFlowView_h/Classes/SGCoverFlowView/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGCoverFlowView_h/Protocols/SGCoverFlowViewDelegate/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGCoverFlowView_h/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGEnvironmentConstants_h/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGGeoJSONEncoder_h/Classes/SGGeoJSONEncoder/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGGeoJSONEncoder_h/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGLayerMapView_h/Classes/SGLayerMapView/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGLayerMapView_h/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGLayer_h/Classes/SGLayer/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGLayer_h/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGLocationService_h/Classes/SGLocationService/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGLocationService_h/Protocols/SGLocationServiceDelegate/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGLocationService_h/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGLocationTypes_h/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGMovableStack_h/Classes/SGMovableStack/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGMovableStack_h/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGOAuth_h/Classes/SGOAuth/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGOAuth_h/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGRadar_h/Classes/SGRadar/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGRadar_h/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGRecordAnnotation_h/Protocols/SGAnnotation/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGRecordAnnotation_h/Protocols/SGRecordAnnotation/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGRecordAnnotation_h/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGRecord_h/Classes/SGRecord/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/SGRecord_h/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/index.html SGiPhoneSDK/Documentation/this_hdoc/index.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/logo.png SGiPhoneSDK/Documentation/Images/logo.png
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/shelf.png SGiPhoneSDK/Documentation/Images/shelf.png
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGARNavigationViewController_h/Classes/SGARNavigationViewController/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGARNavigationViewController_h/Protocols/SGARNavigationViewControllerDataSource/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGARNavigationViewController_h/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGARResponder_h/Protocols/SGARResponder/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGARResponder_h/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGARView_h/Classes/SGARView/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGARView_h/Protocols/SGARViewDataSource/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGARView_h/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGAlbum_h/Protocols/SGAlbum/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGAlbum_h/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGAnnotationViewContainer_h/Classes/SGAnnotationViewContainer/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGAnnotationViewContainer_h/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGAnnotationView_h/Classes/SGAnnotationView/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGAnnotationView_h/Protocols/SGAnnotationViewDelegate/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGAnnotationView_h/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGAuthorization_h/Protocols/SGAuthorization/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGAuthorization_h/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGCoverFlowView_h/Classes/SGCoverFlowView/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGCoverFlowView_h/Protocols/SGCoverFlowViewDelegate/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGCoverFlowView_h/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGEnvironmentConstants_h/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGGeoJSONEncoder_h/Classes/SGGeoJSONEncoder/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGGeoJSONEncoder_h/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGLayerMapView_h/Classes/SGLayerMapView/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGLayerMapView_h/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGLayer_h/Classes/SGLayer/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGLayer_h/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGLocationService_h/Classes/SGLocationService/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGLocationService_h/Protocols/SGLocationServiceDelegate/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGLocationService_h/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGLocationTypes_h/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGMovableStack_h/Classes/SGMovableStack/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGMovableStack_h/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGOAuth_h/Classes/SGOAuth/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGOAuth_h/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGRadar_h/Classes/SGRadar/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGRadar_h/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGRecordAnnotation_h/Protocols/SGAnnotation/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGRecordAnnotation_h/Protocols/SGRecordAnnotation/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGRecordAnnotation_h/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGRecord_h/Classes/SGRecord/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/SGRecord_h/toc.html
+r0
+
+CCpResource build/Debug-iphonesimulator/SGDemoApp.app/toc.html SGiPhoneSDK/Documentation/this_hdoc/toc.html
+r0
+
+CDataModelCompile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDemoApp.mom /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/SGDemoApp.xcdatamodel
+s282791939.486318
+e282791939.553870
+r1
+xDataModelCompile
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDemoApp.mom
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/SGDemoApp.xcdatamodel
+lSLF07#2@102"Compile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/SGDemoApp.xcdatamodel282791939#282791939#0(0"0(0#0#94"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/SGDemoApp.xcdatamodel4300885448#572"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/usr/bin/momc -XD_MOMC_TARGET_VERSION=10.5 /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/SGDemoApp.xcdatamodel /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDemoApp.mom0#
+
+CDataModelCompile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDemoApp.mom /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGDemoApp.xcdatamodel
+r0
+
+CDataModelCompile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGLocatorServices.mom /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/SGLocatorServices.xcdatamodel
+s282791661.826940
+e282791661.922574
+r1
+xDataModelCompile
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGLocatorServices.mom
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/SGLocatorServices.xcdatamodel
+lSLF07#2@110"Compile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/SGLocatorServices.xcdatamodel282791661#282791661#0(0"0(0#0#102"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/SGLocatorServices.xcdatamodel4300885448#588"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/usr/bin/momc -XD_MOMC_TARGET_VERSION=10.5 /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/SGLocatorServices.xcdatamodel /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGLocatorServices.mom0#
+
+CGenerateDSYMFile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app.dSYM /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDemoApp
+s282792238.576976
+e282792238.625092
+r1
+xGenerateDSYMFile
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app.dSYM
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDemoApp
+lSLF07#2@115"GenerateDSYMFile build/Debug-iphonesimulator/SGDemoApp.app.dSYM build/Debug-iphonesimulator/SGDemoApp.app/SGDemoApp282792238#282792238#0(0"0(0#0#114"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDemoApp4300885448#561"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/usr/bin/dsymutil /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDemoApp -o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app.dSYM0#
+
+CLd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDemoApp normal i386
+s282792238.508543
+e282792238.576861
+r1
+xLd
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDemoApp
+xnormal
+xi386
+lSLF07#2@119"Link /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDemoApp282792238#282792238#0(0"0(0#0#0"4300885448#1339"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -L/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator -L/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/iphonesimulator -F/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator -filelist /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/Objects-normal/i386/SGDemoApp.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -lSGiPhoneSDK -lSGiPhoneSDK -framework OpenGLES -framework CoreLocation -framework Security -framework MapKit -framework QuartzCore -o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/SGDemoApp0#
+
+CProcessInfoPlistFile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/Info.plist Resources/SGDemoApp-Info.plist
+s282791965.457140
+e282791965.475576
+r1
+xProcessInfoPlistFile
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/Info.plist
+xResources/SGDemoApp-Info.plist
+lSLF07#2@38"Process Resources/SGDemoApp-Info.plist282791965#282791965#0(0"0(0#0#93"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/SGDemoApp-Info.plist4300885448#667"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    builtin-infoPlistUtility Resources/SGDemoApp-Info.plist -genpkginfo /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/Info.plist0#
+
+CProcessInfoPlistFile /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/Info.plist SGDemoApp-Info.plist
+s282791938.707137
+e282791938.710973
+r0
+xProcessInfoPlistFile
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/Info.plist
+xSGDemoApp-Info.plist
+lSLF07#2@28"Process SGDemoApp-Info.plist282791938#282791938#0(95"error: The file “SGDemoApp-Info.plist” couldn’t be opened because there is no such file.1(4@87"The file “SGDemoApp-Info.plist” couldn’t be opened because there is no such file.282791938#18446744073709551615#0#0(6@0"282791938#0#0#0#0#0"0(0#0#83"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGDemoApp-Info.plist4300885448#657"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    builtin-infoPlistUtility SGDemoApp-Info.plist -genpkginfo /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app/Info.plist1#
+
+CProcessPCH /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-aodnmixzjtrbpzevbtvqlwbwezjt/SGDemoApp_Prefix.pch.gch SGDemoApp_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s282791458.364532
+e282791459.341026
+r1
+xProcessPCH
+x/var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-aodnmixzjtrbpzevbtvqlwbwezjt/SGDemoApp_Prefix.pch.gch
+xSGDemoApp_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile SGDemoApp_Prefix.pch282791458#282791459#0(0"0(0#0#83"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGDemoApp_Prefix.pch5139503772646859776#2203"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-generated-files.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-own-target-headers.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-all-target-headers.hmap -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-project-headers.hmap -F/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator "-F/Volumes/Skiiing2/CD/ViewBased/Unknown Path/System/Library/Frameworks" -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/include -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources/i386 -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources -c /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGDemoApp_Prefix.pch -o /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-aodnmixzjtrbpzevbtvqlwbwezjt/SGDemoApp_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-ckzpbumcrpuhnkfcefocmnsuizih/SGDemoApp_Prefix.pch.gch SGDemoApp_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s282791818.516939
+e282791819.335672
+r1
+xProcessPCH
+x/var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-ckzpbumcrpuhnkfcefocmnsuizih/SGDemoApp_Prefix.pch.gch
+xSGDemoApp_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile SGDemoApp_Prefix.pch282791818#282791819#0(0"0(0#0#83"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGDemoApp_Prefix.pch4300885448#2214"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-generated-files.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-own-target-headers.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-all-target-headers.hmap -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-project-headers.hmap -F/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/include -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources/i386 -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources -c /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGDemoApp_Prefix.pch -o /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-ckzpbumcrpuhnkfcefocmnsuizih/SGDemoApp_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fsyvegjtzwdntpbmlgrvlwzxqnok/SGDemoApp_Prefix.pch.gch SGDemoApp_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s282791660.966026
+e282791661.826830
+r1
+xProcessPCH
+x/var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fsyvegjtzwdntpbmlgrvlwzxqnok/SGDemoApp_Prefix.pch.gch
+xSGDemoApp_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile SGDemoApp_Prefix.pch282791660#282791661#0(0"0(0#0#83"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGDemoApp_Prefix.pch4300885448#2203"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-generated-files.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-own-target-headers.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-all-target-headers.hmap -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-project-headers.hmap -F/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator "-F/Volumes/Skiiing2/CD/ViewBased/Unknown Path/System/Library/Frameworks" -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/include -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources/i386 -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources -c /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGDemoApp_Prefix.pch -o /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fsyvegjtzwdntpbmlgrvlwzxqnok/SGDemoApp_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fyakxpubermcezhgdiqmjsmlusmb/SGDemoApp_Prefix.pch.gch Resources/SGDemoApp_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s282792108.888281
+e282792109.762701
+r1
+xProcessPCH
+x/var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fyakxpubermcezhgdiqmjsmlusmb/SGDemoApp_Prefix.pch.gch
+xResources/SGDemoApp_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@41"Precompile Resources/SGDemoApp_Prefix.pch282792108#282792109#0(0"0(0#0#93"/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/SGDemoApp_Prefix.pch4300885448#2224"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-generated-files.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-own-target-headers.hmap -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-all-target-headers.hmap -iquote /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/SGDemoApp-project-headers.hmap -F/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/include -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/SGiPhoneSDK/Headers -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources/i386 -I/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/SGDemoApp.build/Debug-iphonesimulator/SGDemoApp.build/DerivedSources -c /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/Resources/SGDemoApp_Prefix.pch -o /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-fyakxpubermcezhgdiqmjsmlusmb/SGDemoApp_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/cd/cdzfOOagGNCIbafYJE9LU++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SGDemoApp_Prefix-gpceperarghhklchwmmpvgfjqpju/SGDemoApp_Prefix.pch.gch SGDemoApp_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CTouch /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app
+s282792238.625183
+e282792238.628654
+r1
+xTouch
+x/Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app
+lSLF07#2@110"Touch /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app282792238#282792238#0(0"0(0#0#0"4300885448#428"    cd /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Developer/SDKs/andriod-sdk-mac/tools"    /usr/bin/touch -c /Users/dsmith/workspace/SimpleGeo/SGiPhoneSDK/DemoApps/DemoApp/build/Debug-iphonesimulator/SGDemoApp.app0#
+
