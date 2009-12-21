@@ -6,13 +6,10 @@
 //  Copyright 2009 SimpleGeo. All rights reserved.
 //
 
-#import "SGManagedRecord.h"
+#import "SGRecord.h"
 
-@interface SGGeoNames : SGManagedRecord {
+@interface SGGeoNames : SGRecord {
 
 }
-
-@property (nonatomic, retain) NSString* country;
-@property (nonatomic, assign) double elevation;
 
 @end

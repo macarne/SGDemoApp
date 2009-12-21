@@ -8,7 +8,6 @@
 
 #import "SGSpecificLayer.h"
 
-#import "SGEntityDescriptions.h"
 #import "SGSocialRecord.h"
 
 @implementation SGSpecificLayer
@@ -31,7 +30,7 @@
 
 - (id<SGRecordAnnotation>) recordAnnotationFromGeoJSONDictionary:(NSDictionary *)dictionary
 {
-    SGSocialRecord* record = (SGSocialRecord*)[[recordClass alloc] initWithEntity:[recordClass entityDescription] insertIntoManagedObjectContext:context];
+    SGSocialRecord* record = (SGSocialRecord*)[[recordClass alloc] init];
     [record updateRecordWithGeoJSONDictionary:dictionary];
     
     return record;    
@@ -40,7 +39,6 @@
 - (void) dealloc
 {
     [title release];
-    
     [super dealloc];
 }
 

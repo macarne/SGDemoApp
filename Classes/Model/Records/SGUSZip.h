@@ -6,15 +6,10 @@
 //  Copyright 2009 SimpleGeo. All rights reserved.
 //
 
+#import "SGRecord.h"
 
-#import "SGManagedRecord.h"
-
-@interface SGUSZip : SGManagedRecord {
+@interface SGUSZip : SGRecord {
 
 }
-
-@property (nonatomic, assign) double elevation;
-@property (nonatomic, retain) NSString* name;
-@property (nonatomic, retain) NSString* country;
 
 @end

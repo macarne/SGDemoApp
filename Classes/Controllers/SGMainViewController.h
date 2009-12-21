@@ -28,6 +28,7 @@
     SGLayerMapView* layerMapView;
                     
     SGModelController* modelController;
+    CLLocationManager* locationManager;
     SGLocationService* locationService;
     
     SGCoverFlowView* albumScrollView;

@@ -8,14 +8,6 @@
 
 #import "SGUSWeather.h"
 
-#import "SGEntityDescriptions.h"
-
 @implementation SGUSWeather
-
-+ (NSEntityDescription*) entityDescription
-{
-    return usWeatherDescription;
-}
-
 
 @end

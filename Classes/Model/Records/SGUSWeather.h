@@ -6,9 +6,9 @@
 //  Copyright 2009 SimpleGeo. All rights reserved.
 //
 
-#import "SGManagedRecord.h"
+#import "SGRecord.h"
 
-@interface SGUSWeather : SGManagedRecord {
+@interface SGUSWeather : SGRecord {
 
 }
 

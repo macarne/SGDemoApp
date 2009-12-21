@@ -8,74 +8,20 @@
 
 #import "SGSocialRecord.h"
 
-#import "SGModelController.h"
-#import "SGEntityDescriptions.h"
-
-@interface SGSocialRecord (NSManagedObjectMethods)
-
-- (void) setPrimitiveProfileImageData:(NSData*)data;
-- (NSData*) primitiveProfileImageData;
-
-- (void) setPrimitiveProfilePhotoData:(NSData*)data;
-- (NSData*) primitiveProfilePhotoData;
-
-
-@end
-
-
 @implementation SGSocialRecord 
 
-@synthesize helperView;
-@dynamic profileImage, serviceImage, body, username, photo, photoURL, profileImageURL;
+@synthesize helperView, profileImage, photo, serviceImage;
+@dynamic name;
 
-- (void) awakeFromInsert
+- (id) init
 {
-    [super awakeFromInsert];
-
-    helperView = nil;
-}
-
-- (void) awakeFromFetch
-{
-    [super awakeFromFetch];
-    
-    helperView = nil;
-}
-
-- (void) updateRecordWithGeoJSONDictionary:(NSDictionary*)dictionary
-{
-    [super updateRecordWithGeoJSONDictionary:dictionary];
-    
-    NSDictionary* properties = [dictionary objectForKey:@"properties"];
-    
-    if(properties) {
+    if(self = [super init]) {
         
-        NSString* string = [properties objectForKey:@"name"];
-        if([self isValid:string])
-            [self setName:string];
+        serviceImage = nil;
         
-        string = [properties objectForKey:@"username"];
-        if([self isValid:string])
-            [self setUsername:string];
-        
-        string = [properties objectForKey:@"thumbnail"];
-        if([self isValid:string])
-            [self setProfileImageURL:string];
-        
-        string = [properties objectForKey:@"thumbnail"];
-        if([self isValid:string])
-            [self setProfileImageURL:string];
-            
-        string = [properties objectForKey:@"body"];
-        if([self isValid:string])
-            [self setBody:string];
-        
-        string = [properties objectForKey:@"image"];
-        if([self isValid:string])
-            [self setPhotoURL:string];
-                
     }
     
+    return self;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -83,91 +29,30 @@
 #pragma mark Accessor methods 
 //////////////////////////////////////////////////////////////////////////////////////////////// 
 
-- (void) setProfileImage:(UIImage*)image
-{
-    if(image) {
-        
-        NSData* data = UIImagePNGRepresentation(image);
-        
-        if(data) {
-         
-            [self willChangeValueForKey:@"profileImageData"];
-            [self setPrimitiveProfileImageData:data];
-            [self didChangeValueForKey:@"profileImageData"];
-            
-        }
-    }
-}
-
-- (UIImage*) profileImage
-{
-    
-    UIImage* image = nil;
-     
-    [self willAccessValueForKey:@"profileImageData"];
-    NSData* data = [self primitiveProfileImageData];
-    [self didAccessValueForKey:@"profileImageData"];
-        
-    if(data)
-        image = [UIImage imageWithData:data];
-    
-    return image;
-}
-
-- (void) photo:(UIImage*)image
-{
-    if(image) {
-     
-        NSData* data = UIImagePNGRepresentation(image);
-            
-        if(data) {
-            
-            [self willChangeValueForKey:@"photoData"];
-            [self setPrimitivePhotoData:data];
-            [self didChangeValueForKey:@"photoData"];
-                
-        }
-                
-            
-    }
-}
-
-- (UIImage*) photo
-{
-    UIImage* image = nil;
-        
-    [self willAccessValueForKey:@"photoData"];
-    NSData* data = [self primitivePhotoData];
-    [self didAccessValueForKey:@"photoData"];
-        
-    if(data)
-        image = [UIImage imageWithData:data];
-            
-    return image;
-}
-
-
 - (NSString*) name
 {
         
-    [self willAccessValueForKey:@"name"];
-    NSString* name = [self primitiveName];
-    [self didAccessValueForKey:@"name"];
+    NSString* name = [self.userDefinedProperties objectForKey:@"name"];
     
     if(!name)
-        name = [self username];
+        name = [self.userDefinedProperties objectForKey:@"username"];
     
     return name;
 }
 
+- (NSString*) body
+{
+    return [self.userDefinedProperties objectForKey:@"body"];
+}
+
 - (NSString*) title
 {
-    return self.name;
+    return [self name];
 }
 
 - (NSString*) subtitle
 {
-    return self.body;
+    return [self.userDefinedProperties objectForKey:@"body"];
 }
 
 - (NSString*) profileURL
@@ -184,31 +69,29 @@
 {
     BOOL recievedNewImage = NO;
     
-    NSString* urlString = self.profileImageURL;
+    // Profile image
+    NSString* urlString = [self.userDefinedProperties objectForKey:@"thumbnail"];
     if(urlString) {
      
         NSData* data = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
         
         if(data) {
          
-            UIImage* image = [UIImage imageWithData:data];
-            [self setProfileImage:image];
-            
+            self.profileImage = [[UIImage imageWithData:data] retain];
             recievedNewImage = YES;
         }
         
     }
     
-    urlString = self.photoURL;
+    // Photo image
+    urlString = [self.userDefinedProperties objectForKey:@"iamge"];
     if(urlString) {
         
         NSData* data = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
         
         if(data) {
             
-            UIImage* image = [UIImage imageWithData:data];
-            [self setPhoto:image];
-            
+            self.photo = [[UIImage imageWithData:data] retain];            
             recievedNewImage = YES;
         }
         

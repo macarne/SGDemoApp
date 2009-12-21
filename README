@@ -10,18 +10,14 @@ avenues: UITableView, SGLayerMapView and SGARNavigationViewController.
 
 GeoJSON objects that are retrieved from SimpleGeo require different interpretations
 depending on which layer they were acquired from. Instead of storing the GeoJSON
-objects as NSDictionaries, 6 subclasses of SGManagedRecord are provided to help
+objects as NSDictionaries, 6 subclasses of SGRecord are provided to help
 ease the differentation processes. None of these records are saved when the
 application exits; they are only stored for the duration of the app.
 
 Both the UITableView and SGARNavigationViewController will only display those
 records that are within 1km radius of the devices current location. The AR
 enviornment is set to one of the standard styles. The map will load and display 
-records based on the displayed region of the view. When the map retrieves 
-records from SimpleGeo, they are inserted into CoreData for future retrieval.
-
-Note: At the moment this is throw-away code. Plans to make things nice-and-pretty 
-will happen very soon.
+records based on the displayed region of the view.
 
 ================================================================================
 BUILD REQUIREMENTS:
@@ -29,8 +25,6 @@ BUILD REQUIREMENTS:
 iPhone SDK 3.1
 
 Frameworks
-- Security
-- CoreData
 - CoreLocation
 - Foundation
 - MapKit
@@ -50,7 +44,7 @@ Model
 Contains all of the data models.
 
     Layers
-    Contains the single subclass of SGLayer used for all SGManagedRecords.
+    Contains the single subclass of SGLayer used for all SGRecord.
     
         SGSpecificLayer
         This is a subclass of SGLayer. It is initialized with the name of the lyaer
@@ -101,8 +95,8 @@ Contains all subclasses of UITableViewCell.
 SGAdditions
 Contains all categories.
     
-    SGManagedRecordAdditions
-    Adds a few CoreData query methods to help with population control.
+    SGRecordAdditions
+    Defines helper methods for SGRecord subclasses.
     
 Controllers
 Contains all subclasses of UIViewController.
@@ -121,12 +115,15 @@ Views
     
     
 LocationDemoAppDelegate
-The application delegate who is incharge of initializing the CoreData components.
+The application delegate.
 
 ================================================================================
 CHANGES FROM PREVIOUS VERSIONS:
 
-Version 1.0
+Version 0.9.0
+- Remove CoreData.
+
+Version 0.8.8
 - First version.
 
 ================================================================================

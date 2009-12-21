@@ -8,6 +8,8 @@
 
 #import "SGSocialRecordTableCell.h"
 
+#import "UIImageAdditions.h"
+
 static UIImage* kDefaultImage = nil;
 
 @implementation SGSocialRecordTableCell
@@ -57,7 +59,6 @@ static UIImage* kDefaultImage = nil;
 - (void) dealloc
 {
     [serviceImageView release];
-    
     [super dealloc];
 }
 

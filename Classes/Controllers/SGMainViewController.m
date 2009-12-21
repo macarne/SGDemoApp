@@ -22,6 +22,11 @@
 #import "SGSocialRecordTableCell.h"
 
 
+#define kCensusSection_Weather          0
+#define kCensusSection_Zip              1
+#define kCensusSection_GeoNames         2
+
+
 @interface SGMainViewController (Private) <UITableViewDelegate, UITableViewDataSource, SGARNavigationViewControllerDataSource, SGCoverFlowViewDelegate>
 
 - (void) initializeLocationService;
@@ -46,12 +51,12 @@
     if(self = [super init]) {
                         
         self.title = @"Demo";
-        
         self.hidesBottomBarWhenPushed = NO;
         
         modelController = [SGModelController modelController];
-        modelController.locationManager.delegate = self;
-        [modelController.locationManager startUpdatingLocation];        
+        locationManager = [[CLLocationManager alloc] init];
+        locationManager.delegate = self;
+        [locationManager startUpdatingLocation];        
         
         [self initializeLocationService];
         [self initializeARView];
@@ -62,13 +67,7 @@
         [layerMapView stopRetrieving];
         
         [self initializeLayers];
-     
-        closeRecordAnnotations = [[NSArray arrayWithObjects:
-                                  [NSMutableArray array],
-                                  [NSMutableArray array],
-                                  [NSMutableArray array],
-                                  nil] retain];
-        
+    
         webViewController = [[SGWebViewController alloc] init];
     }
     
@@ -81,7 +80,7 @@
     [locationService addDelegate:self];
     [SGLocationService callbackOnMainThread:YES];
         
-    SGSetEnvironmentViewingRadius(100000.0f);         // 100km
+    SGSetEnvironmentViewingRadius(100.0f);         // 1km
     
     SGOAuth* oAuth = [[SGOAuth alloc] initWithKey:@"" secret:@""];
     locationService.HTTPAuthorizer = oAuth;
@@ -91,9 +90,12 @@
 {
     layers = [[NSMutableArray alloc] init];
     
+    closeRecordAnnotations = [[NSMutableArray alloc] init];
     currentLocationResponseIds = [[NSMutableArray alloc] init];
     
     for(int i = 0; i < kSGLayerType_Amount; i++) {
+        
+        [closeRecordAnnotations addObject:[NSMutableArray array]];
 
         Class recordClass;
         NSString* layerName;
@@ -188,8 +190,8 @@
     recordTableView.delegate = self;
     [self.view addSubview:recordTableView];
     
-    censusTableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
-    censusTableView.backgroundColor = [UIColor clearColor];
+    censusTableView = [[UITableView alloc] initWithFrame:recordTableView.bounds style:UITableViewStyleGrouped];
+    censusTableView.backgroundColor = [UIColor lightGrayColor];
     censusTableView.dataSource = self;
     censusTableView.delegate = self;
     [self.view addSubview:censusTableView];
@@ -321,18 +323,21 @@
     UIButton* infoButton = (UIButton*)button;
     
     [UIView beginAnimations:@"ShowCensus" context:nil];
-    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
     [UIView setAnimationDuration:1.2];
-    
-    if(infoButton.tag) {
+     
+     if(infoButton.tag) {
+      
+         censusTableView.hidden = YES;
+         [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+         
+     } else {
+         
+         [self.view bringSubviewToFront:censusTableView];
+         censusTableView.hidden = NO;
+         [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+         
+     }
         
-        censusTableView.frame = self.view.bounds;
-        
-    } else {
-        
-        censusTableView.frame = CGRectZero;
-        
-    }
     
     [UIView commitAnimations];
     
@@ -494,14 +499,15 @@
 {
     UITableViewCell* cell = nil;
     
+    NSInteger section = indexPath.section;
+    NSInteger row = indexPath.row;
+    
     if(tableView == recordTableView) {
         
         SGSocialRecordTableCell* socialCell = (SGSocialRecordTableCell*)[recordTableView dequeueReusableCellWithIdentifier:@"NormalCell"];
     
         if(!socialCell)
             socialCell = [[[SGSocialRecordTableCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"NormalCell"] autorelease];
-    
-        NSInteger section = indexPath.section;
         
         SGSocialRecord* record = [[closeRecordAnnotations objectAtIndex:section] objectAtIndex:indexPath.row];
                 
@@ -513,6 +519,15 @@
         
     } else {
         
+        if(section == kCensusSection_Weather) {
+         
+            
+        } else if(section == kCensusSection_Zip) {
+            
+            
+        } else if(section == kCensusSection_GeoNames) {
+            
+        }
         
     }
     
@@ -533,6 +548,16 @@
         amount = [[closeRecordAnnotations objectAtIndex:section] count];
         
     } else {
+        
+        if(section == kCensusSection_Weather) {
+            
+            
+        } else if(section == kCensusSection_Zip) {
+            
+            
+        } else if(section == kCensusSection_GeoNames) {
+            
+        }        
         
     }
 
@@ -579,12 +604,11 @@
         }
     }
     
+    // Make sure we have a valid layer type.
     if(layerType >= 0) {
      
         SGSpecificLayer* layer = [layers objectAtIndex:layerType];
         
-        // If the records that are returned are either Brightkite, Flikr or Twitter,
-        // we want to store them so we can load them into the AR view.
         NSMutableArray* annotationViewRecords = nil;
         if(layerType < [closeRecordAnnotations count])
             annotationViewRecords = [closeRecordAnnotations objectAtIndex:layerType];
@@ -592,18 +616,18 @@
         NSArray* records = (NSArray*)objects;
         for(NSDictionary* geoJSONDictionary in records) {
             
-            // This will create a new record and insert it in CoreData; also returned the record.
-            SGManagedRecord* managedRecord = [layer recordAnnotationFromGeoJSONDictionary:geoJSONDictionary];
+            // This will create a new record and insert it in CoreData; also returning the record.
+            SGRecord* record = [layer recordAnnotationFromGeoJSONDictionary:geoJSONDictionary];
             
-            if(annotationViewRecords && managedRecord)
-                [annotationViewRecords addObject:managedRecord];
+            if(annotationViewRecords && record)
+                [annotationViewRecords addObject:record];
         }        
         
         [currentLocationResponseIds replaceObjectAtIndex:layerType withObject:[NSNull null]];
         
         // Once we get to the last layer, we allow the map view to retrieve
-        // records.
-        if(layerType == 2) {
+        // records when needed.
+        if(layerType == 5) {
             
             [self lockScreen:NO];
             [layerMapView startRetrieving];
@@ -636,7 +660,7 @@
         // Gather all current information.
         SGSpecificLayer* layer = nil;
         NSString* requestId = nil;
-        for(int i = 0; i < 3; i++) {
+        for(int i = 0; i < kSGLayerType_Amount; i++) {
         
             layer = [layers objectAtIndex:i];
             requestId = [layer retrieveRecordsInRegion:region radius:10.0 types:nil limit:100];
@@ -674,9 +698,8 @@
 
 - (NSInteger) viewControllerNumberOfBuckets:(SGARNavigationViewController*)nvc
 {
-    return 4;
+    return 3;
 }
-
 
 - (SGAnnotationView*) viewController:(SGARNavigationViewController*)nvc
                    viewForAnnotation:(id<SGRecordAnnotation>)annotation

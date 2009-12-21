@@ -12,7 +12,7 @@
 @interface SGPinAnnotationView : MKPinAnnotationView {
 
     @private
-    UIImageView* objectImageView;
+    UIImageView* recordImageView;
 }
 
 @end

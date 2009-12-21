@@ -27,23 +27,16 @@ typedef NSInteger SGLayerType;
 
 @interface SGModelController : NSObject {
     
-    CLLocationManager* locationManager;
-    
     @private
     NSLock* imageLock;
     NSMutableArray* objectsInNeedOfImage;
     NSInteger threadCount;
 }
 
-@property (nonatomic, readonly) CLLocationManager* locationManager;
-
 + (SGModelController*) modelController;
 
 - (void) addObjectToImageLoader:(SGSocialRecord*)profile;
 - (void) removeObjectFromImageLoader:(SGSocialRecord*)profile;
-
-- (NSArray*) getAllRecords;
-- (NSArray*) getRecordsOfType:(SGLayerType)modelType;
 
 - (NSString*) stringForModelType:(SGLayerType)type;
 

@@ -8,19 +8,13 @@
 
 #import "SGModelController.h"
 
-#import "SGEntityDescriptions.h"
-
 static SGModelController* modelController = nil;
 
 @implementation SGModelController
 
-@synthesize locationManager;
-
 - (id) init
 {
     if(self = [super init]) {
-        
-        locationManager = [[CLLocationManager alloc] init];
         
         objectsInNeedOfImage = [[NSMutableArray alloc] init];
         imageLock = [[NSLock alloc] init];
@@ -36,65 +30,6 @@ static SGModelController* modelController = nil;
         modelController = [[SGModelController alloc] init];
     
     return modelController;
-}
-
-////////////////////////////////////////////////////////////////////////////////////////////////
-#pragma mark -
-#pragma mark Queries 
-//////////////////////////////////////////////////////////////////////////////////////////////// 
-
-- (NSArray*) getAllRecords
-{
-    NSMutableArray* records = [NSMutableArray array];
-    for(int i = 0; i < kSGLayerType_Amount; i++)
-        [records addObjectsFromArray:[self getRecordsOfType:i]];
-    
-    return records;
-}
-
-- (NSArray*) getRecordsOfType:(SGLayerType)modelType
-{
-    NSMutableArray* records = [NSMutableArray array];
-    
-    NSEntityDescription* description = nil;
-    switch (modelType) {
-        case kSGLayerType_Twitter:
-            description = twitterDescription;
-            break;
-        case kSGLayerType_Flickr:
-            description = flickrDescription;
-            break;            
-        case kSGLayerType_Brightkite:
-            description = brightkiteDescription;
-            break;
-        case kSGLayerType_USZip:
-            description = usZipDescription;
-            break;
-        case kSGLayerType_USWeather:
-            description = usWeatherDescription;
-            break;
-        case kSGLayerType_GeoNames:
-            description = geoNamesDescription;
-            break;
-        default:
-            break;
-    }
-    
-    if(description) {
-     
-        NSFetchRequest* request = [[NSFetchRequest alloc] init];
-        [request setEntity:description];
-        [request setReturnsObjectsAsFaults:NO];
-        
-        NSArray* array = [context executeFetchRequest:request error:nil];
-        [request release];
-        
-        if(array)
-            [records addObjectsFromArray:array];
-        
-    }
-    
-    return records;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////

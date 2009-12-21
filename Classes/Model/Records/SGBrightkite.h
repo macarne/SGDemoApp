@@ -12,7 +12,4 @@
 
 }
 
-@property (nonatomic, retain) UIImage* brightkiteImage;
-@property (nonatomic, retain) NSString* brightkiteImageURL;
-
 @end

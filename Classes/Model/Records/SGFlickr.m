@@ -8,31 +8,16 @@
 
 #import "SGFlickr.h"
 
-#import "SGEntityDescriptions.h"
-
-static UIImage* flickrServiceImage = nil;
-
 @implementation SGFlickr 
 
-+ (NSEntityDescription*) entityDescription
-{
-    return flickrDescription;
-}
+////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark -
+#pragma mark Accessor methods 
+//////////////////////////////////////////////////////////////////////////////////////////////// 
 
-- (void) awakeFromInsert
+- (UIImage*) serviceImage
 {
-    [super awakeFromInsert];
-    
-    if(!flickrServiceImage)
-        flickrServiceImage = [[UIImage imageNamed:@"Flickr.png"] retain];
-}
-
-- (void) awakeFromFetch
-{
-    [super awakeFromFetch];
-    
-    if(!flickrServiceImage)
-        flickrServiceImage = [[UIImage imageNamed:@"Flickr.png"] retain];
+    return [UIImage imageNamed:@"Flickr.png"];
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -40,37 +25,9 @@ static UIImage* flickrServiceImage = nil;
 #pragma mark SGRecord overrides 
 //////////////////////////////////////////////////////////////////////////////////////////////// 
 
-- (UIImage*) serviceImage
-{
-    return flickrServiceImage;
-}
-
 - (NSString*) profileURL
 {
-    return [NSString stringWithFormat:@"http://flickr.com/photos/%@/%@", self.username, self.recordId];
-}
-
-- (void) fetchImages
-{
-    
-    NSString* urlString = self.profileImageURL;
-    
-    if(urlString) {
-        
-        NSData* data = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
-        
-        if(data) {
-            
-            UIImage* image = [UIImage imageWithData:data];
-            [self setProfileImage:image];
-                        
-        }
-        
-    }
-        
-    if(helperView && [helperView isKindOfClass:[UIView class]])
-        [helperView performSelectorOnMainThread:@selector(setNeedsLayout) withObject:nil waitUntilDone:NO];
-    
+    return [NSString stringWithFormat:@"http://flickr.com/photos/%@/%@", [self.userDefinedProperties objectForKey:@"username"], self.recordId];
 }
 
 @end
