@@ -15,6 +15,8 @@
      */
     UIImage* profileImage;
     
+    UIImage* photo;
+    
     /*
      * If the social record comes with an extra photo (Brightkite or Flickr).
      * then it will will be assigned to this value.

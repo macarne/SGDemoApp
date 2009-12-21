@@ -16,8 +16,6 @@
 #import "SGUSWeather.h"
 #import "SGGeoNames.h"
 
-#import "SGSpecificLayer.h"
-
 #import "SGPinAnnotationView.h"                                                                                             
 #import "SGSocialRecordTableCell.h"
 
@@ -82,7 +80,11 @@
         
     SGSetEnvironmentViewingRadius(100.0f);         // 1km
     
-    SGOAuth* oAuth = [[SGOAuth alloc] initWithKey:@"" secret:@""];
+    NSBundle* mainBundle = [NSBundle mainBundle];
+    NSString* path = [mainBundle pathForResource:@"Token" ofType:@"plist"];
+    NSDictionary* token = [NSDictionary dictionaryWithContentsOfFile:path];
+    
+    SGOAuth* oAuth = [[SGOAuth alloc] initWithKey:[token objectForKey:@"key"] secret:[token objectForKey:@"secret"]];
     locationService.HTTPAuthorizer = oAuth;
 }
 
@@ -142,7 +144,7 @@
                 break;
         }
         
-        SGSpecificLayer* layer = [[SGSpecificLayer alloc] initWithLayerName:layerName recordClass:recordClass];
+        SGLayer* layer = [[SGLayer alloc] initWithLayerName:layerName];
         [layers addObject:layer];
         [currentLocationResponseIds addObject:[NSNull null]];
     }
@@ -315,7 +317,7 @@
 
 - (void) locateMe:(id)button
 {
-    [self centerMap:modelController.locationManager.location.coordinate animated:YES];
+    [self centerMap:locationManager.location.coordinate animated:YES];
 }
 
 - (void) showCensusInfo:(id)button
@@ -607,7 +609,7 @@
     // Make sure we have a valid layer type.
     if(layerType >= 0) {
      
-        SGSpecificLayer* layer = [layers objectAtIndex:layerType];
+        SGLayer* layer = [layers objectAtIndex:layerType];
         
         NSMutableArray* annotationViewRecords = nil;
         if(layerType < [closeRecordAnnotations count])
@@ -658,7 +660,7 @@
                                        10);
     
         // Gather all current information.
-        SGSpecificLayer* layer = nil;
+        SGLayer* layer = nil;
         NSString* requestId = nil;
         for(int i = 0; i < kSGLayerType_Amount; i++) {
         
