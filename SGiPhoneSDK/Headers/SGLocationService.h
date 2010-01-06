@@ -227,21 +227,37 @@
 //////////////////////////////////////////////////////////////////////////////////////////////// 
 
 /*!
-* @method retrieveRecordsForRegion:layers:types:limit:
-* @abstract ￼Gets records that are located in a specific SGGeohash region.
-* @param region ￼The region that should be searched.
+* @method retrieveRecordsForGeohash:layers:types:limit:
+* @abstract ￼Gets records that are located in a specific geohash.
+* @param geohash ￼The geohash that should be searched.
 * @param layers ￼An array of layer ids that will help filter the search.
 * @param types ￼An array of types that will help filter the search.
-* @param radius The radius (km) to search in.
 * @param limit ￼The amount of records to obtain. 
 * @result ￼A response id that is used to identifier the return value from SimpleGeo. 
 * You can use this value in @link SGLocationServiceDelegate delegate @/link.
 */
-- (NSString*) retrieveRecordsForRegion:(SGGeohash)region 
+- (NSString*) retrieveRecordsForGeohash:(SGGeohash)geohash 
                                 layers:(NSArray*)layers
                                  types:(NSArray*)types
-                                radius:(double)radius
                                  limit:(NSInteger)limit;
+
+/*!
+* @method retrieveRecordsForCoordinate:radius:layers:types:limit:
+* @abstract Get records that are located within a radius of coordinate.
+* @param coord The origin of the radius.
+* @param radius The radius of the search space. (km)
+* @param layers ￼An array of layer ids that will help filter the search.
+* @param types ￼An array of types that will help filter the search.
+* @param limit ￼The amount of records to obtain. 
+* @result ￼A response id that is used to identifier the return value from SimpleGeo. 
+* You can use this value in @link SGLocationServiceDelegate delegate @/link. 
+*/
+- (NSString*) retrieveRecordsForCoordinate:(CLLocationCoordinate2D)coord
+                                   radius:(double)radius
+                                   layers:(NSArray*)layers
+                                    types:(NSArray*)types
+                                    limit:(NSInteger)limit;
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark -
@@ -264,7 +280,7 @@
 * a dictionary that is aGeoJSON representation of a record. See @link //simplegeo/ooc/cl/SGGeoJSONEncoder SGGeoJSONEncoder @/link
 * for a specific guide to the GeoJSON objects that returned from SimpleGeo.
 */
-@protocol SGLocationServiceDelegate
+@protocol SGLocationServiceDelegate <NSObject>
 
 /*!
 * @method locationService:succeededForResponseId:responseObject:

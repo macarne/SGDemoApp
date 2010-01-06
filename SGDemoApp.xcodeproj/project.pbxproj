@@ -55,6 +55,7 @@
 		4A24250810DB1119005D1CB1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A24250710DB1119005D1CB1 /* MapKit.framework */; };
 		4A24250F10DB112D005D1CB1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A24250E10DB112D005D1CB1 /* QuartzCore.framework */; };
 		4A24270410DB156D005D1CB1 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 4A24270310DB156D005D1CB1 /* README */; };
+		4A8230F310E05AB60026E552 /* SGSocialLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8230F210E05AB60026E552 /* SGSocialLayer.m */; };
 		4AD169EE10DFECCF0057D9EC /* SGRecordAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD169ED10DFECCF0057D9EC /* SGRecordAdditions.m */; };
 		4AD16A0E10DFF5AB0057D9EC /* UIImageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD16A0D10DFF5AB0057D9EC /* UIImageAdditions.m */; };
 		4AD16AF310E010CE0057D9EC /* Token.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AD16AF210E010CE0057D9EC /* Token.plist */; };
@@ -147,6 +148,8 @@
 		4A24250710DB1119005D1CB1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4A24250E10DB112D005D1CB1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4A24270310DB156D005D1CB1 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		4A8230F110E05AB60026E552 /* SGSocialLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGSocialLayer.h; sourceTree = "<group>"; };
+		4A8230F210E05AB60026E552 /* SGSocialLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGSocialLayer.m; sourceTree = "<group>"; };
 		4AD169EC10DFECCF0057D9EC /* SGRecordAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGRecordAdditions.h; sourceTree = "<group>"; };
 		4AD169ED10DFECCF0057D9EC /* SGRecordAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGRecordAdditions.m; sourceTree = "<group>"; };
 		4AD16A0C10DFF5AB0057D9EC /* UIImageAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageAdditions.h; sourceTree = "<group>"; };
@@ -259,6 +262,8 @@
 				4A24231910DB0E12005D1CB1 /* Records */,
 				4A24232C10DB0E12005D1CB1 /* SGModelController.h */,
 				4A24232D10DB0E12005D1CB1 /* SGModelController.m */,
+				4A8230F110E05AB60026E552 /* SGSocialLayer.h */,
+				4A8230F210E05AB60026E552 /* SGSocialLayer.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -502,6 +507,7 @@
 				4A24234510DB0E12005D1CB1 /* SGPinAnnotationView.m in Sources */,
 				4AD169EE10DFECCF0057D9EC /* SGRecordAdditions.m in Sources */,
 				4AD16A0E10DFF5AB0057D9EC /* UIImageAdditions.m in Sources */,
+				4A8230F310E05AB60026E552 /* SGSocialLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,7 +532,6 @@
 					"-l",
 					SGiPhoneSDK,
 					"-ObjC",
-					"-all_load",
 				);
 				PRODUCT_NAME = SGDemoApp;
 				SDKROOT = iphoneos3.1;

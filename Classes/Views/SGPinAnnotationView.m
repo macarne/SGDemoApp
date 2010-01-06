@@ -29,6 +29,7 @@ static UIImage* DefaultImage = nil;
         imageView.frame = CGRectMake(0.0, 0.0, 28.0, 28.0);
         [imageView addSubview:recordImageView];
         
+        self.animatesDrop = YES;
         self.leftCalloutAccessoryView = imageView;
     }
     

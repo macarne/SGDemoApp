@@ -8,6 +8,8 @@
 
 #import "SGMainViewController.h"
 
+#import "SGSocialLayer.h"
+
 /* Records */
 #import "SGFlickr.h"
 #import "SGTweet.h"
@@ -80,6 +82,9 @@
         
     SGSetEnvironmentViewingRadius(100.0f);         // 1km
     
+    // The Token.plist file is just a file that contains the OAuth access
+    // and secret key. Either create your own Token.plist file or just 
+    // create the OAuth object with the proper string values.
     NSBundle* mainBundle = [NSBundle mainBundle];
     NSString* path = [mainBundle pathForResource:@"Token" ofType:@"plist"];
     NSDictionary* token = [NSDictionary dictionaryWithContentsOfFile:path];
@@ -99,52 +104,46 @@
         
         [closeRecordAnnotations addObject:[NSMutableArray array]];
 
-        Class recordClass;
-        NSString* layerName;
-        
+        SGLayer* layer = nil;
         switch (i) {
                 
             case kSGLayerType_Brightkite:
             {
-                recordClass = [SGBrightkite class];
-                layerName = @"com.simplegeo.global.brightkite";
+                layer = [[SGSocialLayer alloc] initWithLayerName:@"com.simplegeo.global.brightkite"];
+                ((SGSocialLayer*)layer).socialRecordClass = [SGBrightkite class];
             }
                 break;
             case kSGLayerType_Twitter:
             {
-                recordClass = [SGTweet class];
-                layerName = @"com.simplegeo.global.twitter";
+                layer = [[SGSocialLayer alloc] initWithLayerName:@"com.simplegeo.global.twitter"];
+                ((SGSocialLayer*)layer).socialRecordClass = [SGTweet class];                
             }
                 break;
             case kSGLayerType_Flickr:
             {
-                recordClass = [SGFlickr class];
-                layerName = @"com.simplegeo.global.flickr";
+                layer = [[SGSocialLayer alloc] initWithLayerName:@"com.simplegeo.global.flickr"];            
+                ((SGSocialLayer*)layer).socialRecordClass = [SGFlickr class];                
             }
                 break;
             case kSGLayerType_GeoNames:
             {
-                recordClass = [SGGeoNames class];
-                layerName = @"com.simplegeo.global.geonames";
+                layer = [[SGLayer alloc] initWithLayerName:@"com.simplegeo.global.geonames"];            
             }
                 break;
             case kSGLayerType_USZip:
             {
-                recordClass = [SGUSZip class];
-                layerName = @"com.simplegeo.us.zip";
+                layer = [[SGLayer alloc] initWithLayerName:@"com.simplegeo.us.zip"];
             }
                 break;
             case kSGLayerType_USWeather:
             {
-                recordClass = [SGUSWeather class];
-                layerName = @"com.simplegeo.us.weather";
+                layer = [[SGLayer alloc] initWithLayerName:@"com.simplegeo.us.weather"];
             }
                 break;                
             default:
                 break;
         }
         
-        SGLayer* layer = [[SGLayer alloc] initWithLayerName:layerName];
         [layers addObject:layer];
         [currentLocationResponseIds addObject:[NSNull null]];
     }
@@ -640,7 +639,35 @@
 
 - (void) locationService:(SGLocationService*)service failedForResponseId:(NSString*)requestId error:(NSError*)error
 {
-    [self presentError:error];
+    
+    // Search through all response ids that were created on the initial value
+    // of the device's location.
+    SGLayerType layerType = -1;
+    NSString* layerResponse = nil;
+    for(int i = 0; i < kSGLayerType_Amount; i++) {
+        
+        layerResponse = [currentLocationResponseIds objectAtIndex:i];
+        if(![layerResponse isKindOfClass:[NSNull class]] && [layerResponse isEqualToString:requestId]) {
+            layerType = i;
+            break;
+        }
+    }
+    
+    // Make sure we have a valid layer type.
+    if(layerType >= 0) {
+                
+        [currentLocationResponseIds replaceObjectAtIndex:layerType withObject:[NSNull null]];
+        
+        // Once we get to the last layer, we allow the map view to retrieve
+        // records when needed.
+        if(layerType == 5) {
+            
+            [self lockScreen:NO];
+            [layerMapView startRetrieving];
+            [self presentError:error];
+        }
+    }
+    
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -653,19 +680,16 @@
     // This will only be executed once.
     if(!oldLocation) {
         
-        [self centerMap:newLocation.coordinate animated:YES];
-    
-        SGGeohash region = SGGeohashMake(newLocation.coordinate.latitude,
-                                       newLocation.coordinate.longitude,
-                                       10);
-    
+        CLLocationCoordinate2D coordinate = newLocation.coordinate;
+        [self centerMap:coordinate animated:YES];
+        
         // Gather all current information.
         SGLayer* layer = nil;
         NSString* requestId = nil;
         for(int i = 0; i < kSGLayerType_Amount; i++) {
         
             layer = [layers objectAtIndex:i];
-            requestId = [layer retrieveRecordsInRegion:region radius:10.0 types:nil limit:100];
+            requestId = [layer retrieveRecordsForCoordinate:coordinate radius:10.0 types:nil limit:100];
         
             if(requestId) 
                 [currentLocationResponseIds replaceObjectAtIndex:i

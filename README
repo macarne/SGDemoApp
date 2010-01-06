@@ -19,6 +19,11 @@ records that are within 1km radius of the devices current location. The AR
 enviornment is set to one of the standard styles. The map will load and display 
 records based on the displayed region of the view.
 
+In order to run the demo, you must already possess an OAuth access and secret key
+from http://simplegeo.com. At line 98 in SGMainViewController, a plist is loaded
+that "supposedly" contains the proper credentials. Either add your own Token.plist
+file to the project or just create create the SGOAuth object with plain-old NSStrings.
+
 ================================================================================
 BUILD REQUIREMENTS:
 
@@ -120,8 +125,11 @@ The application delegate.
 ================================================================================
 CHANGES FROM PREVIOUS VERSIONS:
 
-Version 0.9.0
-- Remove CoreData.
+Version 0.8.10
+- Added categories to the repository.
+
+Version 0.8.9
+- Removed CoreData.
 
 Version 0.8.8
 - First version.
