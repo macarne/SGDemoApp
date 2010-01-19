@@ -16,9 +16,9 @@ enum SGLayerType {
     kSGLayerType_Flickr,
     kSGLayerType_Brightkite,
     
-    kSGLayerType_GeoNames,
-    kSGLayerType_USZip,
     kSGLayerType_USWeather,
+    kSGLayerType_USZip,
+    kSGLayerType_GeoNames,
     
     kSGLayerType_Amount
 };

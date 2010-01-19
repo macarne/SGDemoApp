@@ -18,7 +18,7 @@
 @interface SGMainViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate, SGLocationServiceDelegate> { 
     
     @private    
-    UITableView* recordTableView;
+    UITableView* socialRecordTableView;
     UITableView* censusTableView;
                 
     UISegmentedControl* segmentedControl;
@@ -35,7 +35,7 @@
     
     NSMutableArray* layers;
     NSMutableArray* currentLocationResponseIds;
-    NSMutableArray* closeRecordAnnotations;
+    NSMutableArray* nearbyRecordAnnotations;
     
     UIBarButtonItem* leftButton, *rightButton;
     UILabel* bucketLabel;

@@ -22,9 +22,41 @@
 #import "SGSocialRecordTableCell.h"
 
 
-#define kCensusSection_Weather          0
-#define kCensusSection_Zip              1
-#define kCensusSection_GeoNames         2
+enum CensusSection {
+    
+    kCensusSection_Weather = 0,
+    kCensusSection_Zip,
+    kCensusSection_GeoNames,
+    
+    kCensusSection_Amount
+};
+
+enum WeatherRow {
+ 
+    kWeatherRow_Weather = 0,
+    kWeatherRow_StationDistance,
+    
+    kWeatherRow_Amount  
+};
+
+enum ZipRow {
+ 
+    kZipRow_City = 0,
+    kZipRow_ZipCode,
+    kZipRow_Population,
+    kZipRow_HouseValue,
+    kZipRow_HouseIncome,
+    
+    kZipRow_Amount
+};
+
+enum GeoNames {
+ 
+    kGeoNames_Name = 0,
+    kGeoNames_Population,
+    
+    kGeoNames_Amount
+};
 
 
 @interface SGMainViewController (Private) <UITableViewDelegate, UITableViewDataSource, SGARNavigationViewControllerDataSource, SGCoverFlowViewDelegate>
@@ -35,6 +67,9 @@
 
 - (void) presentError:(NSError *)error;
 - (void) lockScreen:(BOOL)lock;
+
+- (id<SGRecordAnnotation>) getClosestAnnotation:(NSArray*)annotations;
+- (NSString*) getStringValue:(NSString*)key properties:(NSDictionary*)properties;
 
 - (void) setupAnnotationView:(SGAnnotationView *)annotationView;
 - (void) centerMap:(CLLocationCoordinate2D)coordinate animated:(BOOL)animated;
@@ -86,7 +121,7 @@
     // and secret key. Either create your own Token.plist file or just 
     // create the OAuth object with the proper string values.
     NSBundle* mainBundle = [NSBundle mainBundle];
-    NSString* path = [mainBundle pathForResource:@"Token" ofType:@"plist"];
+    NSString* path = [mainBundle pathForResource:@"MyToken" ofType:@"plist"];
     NSDictionary* token = [NSDictionary dictionaryWithContentsOfFile:path];
     
     SGOAuth* oAuth = [[SGOAuth alloc] initWithKey:[token objectForKey:@"key"] secret:[token objectForKey:@"secret"]];
@@ -97,12 +132,12 @@
 {
     layers = [[NSMutableArray alloc] init];
     
-    closeRecordAnnotations = [[NSMutableArray alloc] init];
+    nearbyRecordAnnotations = [[NSMutableArray alloc] init];
     currentLocationResponseIds = [[NSMutableArray alloc] init];
     
     for(int i = 0; i < kSGLayerType_Amount; i++) {
         
-        [closeRecordAnnotations addObject:[NSMutableArray array]];
+        [nearbyRecordAnnotations addObject:[NSMutableArray array]];
 
         SGLayer* layer = nil;
         switch (i) {
@@ -162,7 +197,6 @@
     
     arNavigationViewController.arView.enableWalking = NO;
     
-    
     SGAnnotationViewContainer* container = [[[SGAnnotationViewContainer alloc] initWithFrame:CGRectZero] autorelease];
     container.frame = CGRectMake(200.0,
                                  300.0,
@@ -182,17 +216,16 @@
 {
     [super loadView];
             
-    recordTableView = [[UITableView alloc] initWithFrame:CGRectMake(0.0,
+    socialRecordTableView = [[UITableView alloc] initWithFrame:CGRectMake(0.0,
                                                                     0.0,
                                                                     self.view.bounds.size.width,
-                                                                    self.view.bounds.size.height - self.navigationController.toolbar.frame.size.height)
+                                                                    self.view.bounds.size.height - (self.navigationController.toolbar.frame.size.height * 2.))
                                                    style:UITableViewStylePlain];
-    recordTableView.dataSource = self;
-    recordTableView.delegate = self;
-    [self.view addSubview:recordTableView];
+    socialRecordTableView.dataSource = self;
+    socialRecordTableView.delegate = self;
+    [self.view addSubview:socialRecordTableView];
     
-    censusTableView = [[UITableView alloc] initWithFrame:recordTableView.bounds style:UITableViewStyleGrouped];
-    censusTableView.backgroundColor = [UIColor lightGrayColor];
+    censusTableView = [[UITableView alloc] initWithFrame:socialRecordTableView.bounds style:UITableViewStyleGrouped];
     censusTableView.dataSource = self;
     censusTableView.delegate = self;
     [self.view addSubview:censusTableView];
@@ -272,7 +305,7 @@
     bucketLabel.backgroundColor = [UIColor clearColor];
     bucketLabel.font = [UIFont boldSystemFontOfSize:12.0];
     bucketLabel.textAlignment = UITextAlignmentCenter;
-    bucketLabel.frame = CGRectMake(0.0, 0.0, 200.0, 44.0);
+    bucketLabel.frame = CGRectMake(0.0, 0.0, 0.0, 320.0);
     bucketLabel.text = @"Bucket Title";
     
     UIBarButtonItem* middleButton = [[UIBarButtonItem alloc] initWithCustomView:bucketLabel];
@@ -309,8 +342,8 @@
         
     } else {
 
-        [recordTableView reloadData];
-        [self.view bringSubviewToFront:recordTableView];
+        [socialRecordTableView reloadData];
+        [self.view bringSubviewToFront:socialRecordTableView];
     }
 }
 
@@ -322,6 +355,8 @@
 - (void) showCensusInfo:(id)button
 {
     UIButton* infoButton = (UIButton*)button;
+    
+    [censusTableView reloadData];
     
     [UIView beginAnimations:@"ShowCensus" context:nil];
     [UIView setAnimationDuration:1.2];
@@ -503,14 +538,14 @@
     NSInteger section = indexPath.section;
     NSInteger row = indexPath.row;
     
-    if(tableView == recordTableView) {
+    if(tableView == socialRecordTableView) {
         
-        SGSocialRecordTableCell* socialCell = (SGSocialRecordTableCell*)[recordTableView dequeueReusableCellWithIdentifier:@"NormalCell"];
+        SGSocialRecordTableCell* socialCell = (SGSocialRecordTableCell*)[socialRecordTableView dequeueReusableCellWithIdentifier:@"NormalCell"];
     
         if(!socialCell)
             socialCell = [[[SGSocialRecordTableCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"NormalCell"] autorelease];
         
-        SGSocialRecord* record = [[closeRecordAnnotations objectAtIndex:section] objectAtIndex:indexPath.row];
+        SGSocialRecord* record = [[nearbyRecordAnnotations objectAtIndex:section] objectAtIndex:row];
                 
         socialCell.userProfile = record;
         record.helperView = cell;
@@ -520,14 +555,97 @@
         
     } else {
         
+        cell = [tableView dequeueReusableCellWithIdentifier:@"CensusCell"];
+        if(!cell)
+            cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"CensusCell"] autorelease];
+        
+        NSArray* recordAnnotations = [nearbyRecordAnnotations objectAtIndex:section+3];
         if(section == kCensusSection_Weather) {
-         
+            
+            SGRecord* record = (SGRecord*)[self getClosestAnnotation:recordAnnotations];
+            if(row == kWeatherRow_Weather) {
+                
+                if(record) {
+                    
+                    NSDictionary* userDefinedProp = [record userDefinedProperties];
+//                    NSString* iconURL = [userDefinedProp objectForKey:@"icon_url_base"];
+//                    iconURL = [iconURL stringByAppendingString:[userDefinedProp objectForKey:@"icon_url_name"]];
+//                
+//                    UIImage* image = [[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:iconURL]]] retain];
+//                
+//                    cell.imageView.image = image;
+                    cell.textLabel.text = @"Weather";
+                    cell.detailTextLabel.text = [self getStringValue:@"weather" properties:userDefinedProp];
+                }
+                
+                
+            } else if(row == kWeatherRow_StationDistance) {
+                
+                CLLocation* recordLocation = [[CLLocation alloc] initWithLatitude:record.coordinate.latitude
+                                                                        longitude:record.coordinate.longitude];
+                double distance = [locationManager.location getDistanceFrom:recordLocation];
+                [recordLocation release];
+                
+                cell.textLabel.text = @"Station Distance";
+                cell.detailTextLabel.text = [NSString stringWithFormat:@"%.2fm", distance];
+                
+            }
             
         } else if(section == kCensusSection_Zip) {
             
+            SGRecord* annotation = (SGRecord*)[self getClosestAnnotation:recordAnnotations];
+            switch (row) {
+                case kZipRow_ZipCode:
+                {
+                    cell.textLabel.text = @"Zip Code";
+                    cell.detailTextLabel.text = annotation.recordId;
+                }
+                    break;
+                case kZipRow_Population:
+                {
+                    cell.textLabel.text = @"Population";
+                    cell.detailTextLabel.text = [self getStringValue:@"population"
+                                                          properties:[annotation userDefinedProperties]];                    
+                }
+                    break;
+                case kZipRow_HouseIncome:
+                {
+                    cell.textLabel.text = @"Avg House Value";
+                    cell.detailTextLabel.text = [self getStringValue:@"averagehousevalue"
+                                                          properties:[annotation userDefinedProperties]];                    
+                }
+                    break;
+                case kZipRow_HouseValue:
+                {
+                    cell.textLabel.text = @"Avg Household Income";
+                    cell.detailTextLabel.text = [self getStringValue:@"incomeperhousehold"
+                                                          properties:[annotation userDefinedProperties]];                                        
+                }
+                    break;
+                case kZipRow_City:
+                {
+                    cell.textLabel.text = @"City";
+                    cell.detailTextLabel.text = [self getStringValue:@"city"
+                                                          properties:[annotation userDefinedProperties]];                                        
+                }
+                    break;                    
+                default:
+                    break;
+            }
             
         } else if(section == kCensusSection_GeoNames) {
             
+            if(row == kGeoNames_Name) {
+                
+                cell.textLabel.text = @"Name";
+                cell.detailTextLabel.text = @"";
+                
+            } else if(row == kGeoNames_Population) {
+                
+                cell.textLabel.text = @"Population";
+                cell.detailTextLabel.text = @"";
+                
+            }
         }
         
     }
@@ -543,31 +661,31 @@
 - (NSInteger) tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section
 {
     int amount = 0;
-    
-    if(tableView == recordTableView) {
-    
-        amount = [[closeRecordAnnotations objectAtIndex:section] count];
+    if(tableView == socialRecordTableView)
+        amount = [[nearbyRecordAnnotations objectAtIndex:section] count];
+    else {
         
-    } else {
-        
-        if(section == kCensusSection_Weather) {
+        if(section == kCensusSection_Weather)
+            amount = kWeatherRow_Amount;
+        else if(section == kCensusSection_Zip)
+            amount = kZipRow_Amount;
+        else if(section == kCensusSection_GeoNames)
+            amount = 0;
+//            amount = kGeoNames_Amount;            TODO: Enable GeoNames
             
-            
-        } else if(section == kCensusSection_Zip) {
-            
-            
-        } else if(section == kCensusSection_GeoNames) {
-            
-        }        
-        
     }
-
+        
     return amount;
 }
 
 - (NSString*) tableView:(UITableView*)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return [modelController stringForModelType:section];
+    if(tableView != socialRecordTableView)
+        section += 3;
+    
+    NSString* title = [modelController stringForModelType:section];
+
+    return title;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -577,11 +695,19 @@
 
 - (void) tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    SGSocialRecord* record = [[[layers objectAtIndex:indexPath.section] recordAnnotations] 
-                                                    objectAtIndex:indexPath.row];
-    
-    [webViewController loadURLString:[record profileURL]];
-    [self.navigationController pushViewController:webViewController animated:YES];
+    if(tableView == socialRecordTableView) {
+        
+        SGSocialRecord* record = [[[layers objectAtIndex:indexPath.section] recordAnnotations] 
+                                                        objectAtIndex:indexPath.row];
+        
+        [webViewController loadURLString:[record profileURL]];
+        [self.navigationController pushViewController:webViewController animated:YES];
+    }
+}
+
+- (NSIndexPath*) tableView:(UITableView*)tableView willSelectRowAtIndexPath:(NSIndexPath*)indexPath
+{
+    return tableView == censusTableView ? nil : indexPath;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -611,24 +737,27 @@
         SGLayer* layer = [layers objectAtIndex:layerType];
         
         NSMutableArray* annotationViewRecords = nil;
-        if(layerType < [closeRecordAnnotations count])
-            annotationViewRecords = [closeRecordAnnotations objectAtIndex:layerType];
+        if(layerType < [nearbyRecordAnnotations count])
+            annotationViewRecords = [nearbyRecordAnnotations objectAtIndex:layerType];
         
-        NSArray* records = (NSArray*)objects;
-        for(NSDictionary* geoJSONDictionary in records) {
+        if(annotationViewRecords) {
+        
+            NSArray* records = (NSArray*)objects;
+            SGRecord* record = nil;
+            for(NSDictionary* geoJSONDictionary in records) {
+                
+                record = [layer recordAnnotationFromGeoJSONDictionary:geoJSONDictionary];
             
-            // This will create a new record and insert it in CoreData; also returning the record.
-            SGRecord* record = [layer recordAnnotationFromGeoJSONDictionary:geoJSONDictionary];
-            
-            if(annotationViewRecords && record)
-                [annotationViewRecords addObject:record];
-        }        
+                if(record)
+                    [annotationViewRecords addObject:record];
+            }        
+        }
         
         [currentLocationResponseIds replaceObjectAtIndex:layerType withObject:[NSNull null]];
         
         // Once we get to the last layer, we allow the map view to retrieve
         // records when needed.
-        if(layerType == 5) {
+        if(layerType == kSGLayerType_Amount - 1) {
             
             [self lockScreen:NO];
             [layerMapView startRetrieving];
@@ -686,10 +815,16 @@
         // Gather all current information.
         SGLayer* layer = nil;
         NSString* requestId = nil;
+        int radius = 10.0;
         for(int i = 0; i < kSGLayerType_Amount; i++) {
+            
+            // For some of the census data layers,
+            // we need to enlarge the radius to find the proper
+            // weather station and points of interest.
+            radius = (i > 2) ? 10000.0 : 10.0;
         
             layer = [layers objectAtIndex:i];
-            requestId = [layer retrieveRecordsForCoordinate:coordinate radius:10.0 types:nil limit:100];
+            requestId = [layer retrieveRecordsForCoordinate:coordinate radius:radius types:nil limit:100];
         
             if(requestId) 
                 [currentLocationResponseIds replaceObjectAtIndex:i
@@ -714,10 +849,10 @@
     NSMutableArray* annotations = [NSMutableArray array];
     
     if(bucketIndex == 3)
-        for(NSMutableArray* annotations in closeRecordAnnotations)
+        for(NSMutableArray* annotations in nearbyRecordAnnotations)
             [annotations addObjectsFromArray:annotations];
     else
-        [annotations addObjectsFromArray:[closeRecordAnnotations objectAtIndex:bucketIndex]];
+        [annotations addObjectsFromArray:[nearbyRecordAnnotations objectAtIndex:bucketIndex]];
     
     return annotations;
 }
@@ -782,9 +917,53 @@
     [alertView release];    
 }
 
+/* 
+ There are times when we can recieve multiple record annotations for
+ a large enough radius. We want to grab the closest annotation
+ */
+- (id<SGRecordAnnotation>) getClosestAnnotation:(NSArray*)recordAnnotations
+{
+    id<SGRecordAnnotation> annotation = nil;
+    double currentDistance = -1.0;
+    
+    CLLocation* currentLocation = [locationManager location];
+    if(recordAnnotations && [recordAnnotations count]) {
+     
+        CLLocation* location = nil;
+        CLLocationCoordinate2D coord;
+        for(id<SGRecordAnnotation> recordAnnotation in recordAnnotations) {
+            coord = recordAnnotation.coordinate;
+            location = [[CLLocation alloc] initWithLatitude:coord.latitude
+                                                  longitude:coord.longitude];
+            if(currentDistance < 0.0 || [currentLocation getDistanceFrom:location] < currentDistance)
+            {
+                currentDistance = [currentLocation getDistanceFrom:location];
+                annotation = recordAnnotation;
+            }
+            
+            [location release];
+        }
+    }
+    
+    return annotation;
+}
+
+- (NSString*) getStringValue:(NSString*)key properties:(NSDictionary*)properties
+{
+    NSString* stringValue = @"N/A";
+    NSObject* value = [properties objectForKey:key];
+    if(value && ![value isKindOfClass:[NSNull class]])        
+        if([value isKindOfClass:[NSNumber class]])
+            stringValue = [(NSNumber*)value stringValue];
+        else if([value isKindOfClass:[NSString class]])
+            stringValue = (NSString*)value;
+    
+    return stringValue;
+}
+
 - (void) dealloc 
 {
-    [recordTableView release];
+    [socialRecordTableView release];
     [censusTableView release];
     
     [segmentedControl release];
@@ -797,7 +976,7 @@
     
     [layers release];
     [currentLocationResponseIds release];
-    [closeRecordAnnotations release];
+    [nearbyRecordAnnotations release];
     
     [leftButton release];
     [rightButton release];
