@@ -56,8 +56,6 @@
 		4A24250F10DB112D005D1CB1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A24250E10DB112D005D1CB1 /* QuartzCore.framework */; };
 		4A24270410DB156D005D1CB1 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 4A24270310DB156D005D1CB1 /* README */; };
 		4A8230F310E05AB60026E552 /* SGSocialLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8230F210E05AB60026E552 /* SGSocialLayer.m */; };
-		4A8E5BCF1104ED3400D72CC9 /* NSDictionaryAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E5BCE1104ED3400D72CC9 /* NSDictionaryAdditions.m */; };
-		4AA65DD91104AC5B007808F4 /* MyToken.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AA65DD81104AC5B007808F4 /* MyToken.plist */; };
 		4AD169EE10DFECCF0057D9EC /* SGRecordAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD169ED10DFECCF0057D9EC /* SGRecordAdditions.m */; };
 		4AD16A0E10DFF5AB0057D9EC /* UIImageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD16A0D10DFF5AB0057D9EC /* UIImageAdditions.m */; };
 		4AD16AF310E010CE0057D9EC /* Token.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AD16AF210E010CE0057D9EC /* Token.plist */; };
@@ -152,9 +150,6 @@
 		4A24270310DB156D005D1CB1 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		4A8230F110E05AB60026E552 /* SGSocialLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGSocialLayer.h; sourceTree = "<group>"; };
 		4A8230F210E05AB60026E552 /* SGSocialLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGSocialLayer.m; sourceTree = "<group>"; };
-		4A8E5BCD1104ED3400D72CC9 /* NSDictionaryAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionaryAdditions.h; sourceTree = "<group>"; };
-		4A8E5BCE1104ED3400D72CC9 /* NSDictionaryAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryAdditions.m; sourceTree = "<group>"; };
-		4AA65DD81104AC5B007808F4 /* MyToken.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyToken.plist; sourceTree = "<group>"; };
 		4AD169EC10DFECCF0057D9EC /* SGRecordAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGRecordAdditions.h; sourceTree = "<group>"; };
 		4AD169ED10DFECCF0057D9EC /* SGRecordAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGRecordAdditions.m; sourceTree = "<group>"; };
 		4AD16A0C10DFF5AB0057D9EC /* UIImageAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageAdditions.h; sourceTree = "<group>"; };
@@ -246,8 +241,6 @@
 				4AD169ED10DFECCF0057D9EC /* SGRecordAdditions.m */,
 				4AD16A0C10DFF5AB0057D9EC /* UIImageAdditions.h */,
 				4AD16A0D10DFF5AB0057D9EC /* UIImageAdditions.m */,
-				4A8E5BCD1104ED3400D72CC9 /* NSDictionaryAdditions.h */,
-				4A8E5BCE1104ED3400D72CC9 /* NSDictionaryAdditions.m */,
 			);
 			path = Additions;
 			sourceTree = "<group>";
@@ -317,7 +310,6 @@
 		4A24234A10DB0E6D005D1CB1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4AA65DD81104AC5B007808F4 /* MyToken.plist */,
 				4A24234B10DB0E6D005D1CB1 /* SGDemoApp-Info.plist */,
 				4A24234C10DB0E6D005D1CB1 /* Entitlements.plist */,
 				4A24234D10DB0E6D005D1CB1 /* Images */,
@@ -489,7 +481,6 @@
 				4A24249E10DB0EDD005D1CB1 /* README in Resources */,
 				4A24270410DB156D005D1CB1 /* README in Resources */,
 				4AD16AF310E010CE0057D9EC /* Token.plist in Resources */,
-				4AA65DD91104AC5B007808F4 /* MyToken.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,7 +508,6 @@
 				4AD169EE10DFECCF0057D9EC /* SGRecordAdditions.m in Sources */,
 				4AD16A0E10DFF5AB0057D9EC /* UIImageAdditions.m in Sources */,
 				4A8230F310E05AB60026E552 /* SGSocialLayer.m in Sources */,
-				4A8E5BCF1104ED3400D72CC9 /* NSDictionaryAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
