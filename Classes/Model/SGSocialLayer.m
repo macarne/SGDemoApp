@@ -3,7 +3,7 @@
 //  SGDemoApp
 //
 //  Created by Derek Smith on 12/21/09.
-//  Copyright 2009 CrashCorp. All rights reserved.
+//  Copyright 2009 SimpleGeo. All rights reserved.
 //
 
 #import "SGSocialLayer.h"
