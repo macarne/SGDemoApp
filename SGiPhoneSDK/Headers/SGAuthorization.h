@@ -15,6 +15,6 @@
  * protocol is to add authentication to an HTTP request. Currently, the only type of authentication that is supported by
  * SimpleGeo is OAuth.
  */
-@protocol SGAuthorization
+@protocol SGAuthorization <NSObject>
 
 @end
