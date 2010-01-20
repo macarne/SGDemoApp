@@ -9,6 +9,7 @@
 #import <MapKit/MapKit.h>
 
 #import "SGLayer.h"
+#import "SGGeoJSONEncoder.h"
 
 /*!
  * @class

@@ -8,7 +8,9 @@
 
 #import "SGMainViewController.h"
 
-#import "SGSocialLayer.h"
+#import "SGFlickrLayer.h"
+#import "SGBrightkiteLayer.h"
+#import "SGTwitterLayer.h"
 
 /* Records */
 #import "SGFlickr.h"
@@ -98,7 +100,6 @@ enum GeoNames {
             
         layerMapView = [[SGLayerMapView alloc] initWithFrame:CGRectZero];
         layerMapView.delegate = self;
-        layerMapView.limit = 30;
         [layerMapView stopRetrieving];
         
         [self initializeLayers];
@@ -121,7 +122,7 @@ enum GeoNames {
     // and secret key. Either create your own Token.plist file or just 
     // create the OAuth object with the proper string values.
     NSBundle* mainBundle = [NSBundle mainBundle];
-    NSString* path = [mainBundle pathForResource:@"Token" ofType:@"plist"];
+    NSString* path = [mainBundle pathForResource:@"MyToken" ofType:@"plist"];
     NSDictionary* token = [NSDictionary dictionaryWithContentsOfFile:path];
     
     SGOAuth* oAuth = [[SGOAuth alloc] initWithKey:[token objectForKey:@"key"] secret:[token objectForKey:@"secret"]];
@@ -132,32 +133,32 @@ enum GeoNames {
 {
     layers = [[NSMutableArray alloc] init];
     
-    nearbyRecordAnnotations = [[NSMutableArray alloc] init];
+    nearbySocialRecords = [[NSMutableArray alloc] init];
     currentLocationResponseIds = [[NSMutableArray alloc] init];
     
     for(int i = 0; i < kSGLayerType_Amount; i++) {
         
-        [nearbyRecordAnnotations addObject:[NSMutableArray array]];
+        [nearbySocialRecords addObject:[NSMutableArray array]];
 
         SGLayer* layer = nil;
         switch (i) {
                 
             case kSGLayerType_Brightkite:
             {
-                layer = [[SGSocialLayer alloc] initWithLayerName:@"com.simplegeo.global.brightkite"];
-                ((SGSocialLayer*)layer).socialRecordClass = [SGBrightkite class];
+                layer = [[SGBrightkiteLayer alloc] initWithLayerName:@"com.simplegeo.global.brightkite"];
+                [layerMapView addLayer:layer];                
             }
                 break;
             case kSGLayerType_Twitter:
             {
-                layer = [[SGSocialLayer alloc] initWithLayerName:@"com.simplegeo.global.twitter"];
-                ((SGSocialLayer*)layer).socialRecordClass = [SGTweet class];                
+                layer = [[SGTwitterLayer alloc] initWithLayerName:@"com.simplegeo.global.twitter"];
+                [layerMapView addLayer:layer];
             }
                 break;
             case kSGLayerType_Flickr:
             {
-                layer = [[SGSocialLayer alloc] initWithLayerName:@"com.simplegeo.global.flickr"];            
-                ((SGSocialLayer*)layer).socialRecordClass = [SGFlickr class];                
+                layer = [[SGFlickrLayer alloc] initWithLayerName:@"com.simplegeo.global.flickr"];
+                [layerMapView addLayer:layer];
             }
                 break;
             case kSGLayerType_GeoNames:
@@ -181,13 +182,7 @@ enum GeoNames {
         
         [layers addObject:layer];
         [currentLocationResponseIds addObject:[NSNull null]];
-    }
-    
-    // Add the layers that we want to view in the map.
-    [layerMapView addLayer:[layers objectAtIndex:kSGLayerType_Brightkite]];
-    [layerMapView addLayer:[layers objectAtIndex:kSGLayerType_Flickr]];
-    [layerMapView addLayer:[layers objectAtIndex:kSGLayerType_Twitter]];
-    
+    }    
 }
 
 - (void) initializeARView
@@ -545,12 +540,9 @@ enum GeoNames {
         if(!socialCell)
             socialCell = [[[SGSocialRecordTableCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"NormalCell"] autorelease];
         
-        SGSocialRecord* record = [[nearbyRecordAnnotations objectAtIndex:section] objectAtIndex:row];
-                
+        SGSocialRecord* record = [[nearbySocialRecords objectAtIndex:section] objectAtIndex:row];
         socialCell.userProfile = record;
-        record.helperView = cell;
             
-        socialCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         cell = socialCell;
         
     } else {
@@ -559,7 +551,7 @@ enum GeoNames {
         if(!cell)
             cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"CensusCell"] autorelease];
         
-        NSArray* recordAnnotations = [nearbyRecordAnnotations objectAtIndex:section+3];
+        NSArray* recordAnnotations = [nearbySocialRecords objectAtIndex:section+3];
         if(section == kCensusSection_Weather) {
             
             SGRecord* record = (SGRecord*)[self getClosestAnnotation:recordAnnotations];
@@ -662,7 +654,7 @@ enum GeoNames {
 {
     int amount = 0;
     if(tableView == socialRecordTableView)
-        amount = [[nearbyRecordAnnotations objectAtIndex:section] count];
+        amount = [[nearbySocialRecords objectAtIndex:section] count];
     else {
         
         if(section == kCensusSection_Weather)
@@ -697,10 +689,10 @@ enum GeoNames {
 {
     if(tableView == socialRecordTableView) {
         
-        SGSocialRecord* record = [[[layers objectAtIndex:indexPath.section] recordAnnotations] 
-                                                        objectAtIndex:indexPath.row];
+        SGSocialRecord* record = [[nearbySocialRecords objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
         
         [webViewController loadURLString:[record profileURL]];
+        webViewController.title = record.name;
         [self.navigationController pushViewController:webViewController animated:YES];
     }
 }
@@ -737,8 +729,8 @@ enum GeoNames {
         SGLayer* layer = [layers objectAtIndex:layerType];
         
         NSMutableArray* annotationViewRecords = nil;
-        if(layerType < [nearbyRecordAnnotations count])
-            annotationViewRecords = [nearbyRecordAnnotations objectAtIndex:layerType];
+        if(layerType < [nearbySocialRecords count])
+            annotationViewRecords = [nearbySocialRecords objectAtIndex:layerType];
         
         if(annotationViewRecords) {
         
@@ -751,6 +743,7 @@ enum GeoNames {
                 if(record)
                     [annotationViewRecords addObject:record];
             }        
+            
         }
         
         [currentLocationResponseIds replaceObjectAtIndex:layerType withObject:[NSNull null]];
@@ -761,7 +754,7 @@ enum GeoNames {
             
             [self lockScreen:NO];
             [layerMapView startRetrieving];
-            
+            [service removeDelegate:self];
         }
     }
 }
@@ -792,6 +785,7 @@ enum GeoNames {
         if(layerType == 5) {
             
             [self lockScreen:NO];
+            
             [layerMapView startRetrieving];
             [self presentError:error];
         }
@@ -821,7 +815,7 @@ enum GeoNames {
             // For some of the census data layers,
             // we need to enlarge the radius to find the proper
             // weather station and points of interest.
-            radius = (i > 2) ? 10000.0 : 10.0;
+            radius = (i > 2) ? 10000.0 : 1.0;
         
             layer = [layers objectAtIndex:i];
             requestId = [layer retrieveRecordsForCoordinate:coordinate radius:radius types:nil limit:100];
@@ -849,10 +843,10 @@ enum GeoNames {
     NSMutableArray* annotations = [NSMutableArray array];
     
     if(bucketIndex == 3)
-        for(NSMutableArray* annotations in nearbyRecordAnnotations)
+        for(NSMutableArray* annotations in nearbySocialRecords)
             [annotations addObjectsFromArray:annotations];
     else
-        [annotations addObjectsFromArray:[nearbyRecordAnnotations objectAtIndex:bucketIndex]];
+        [annotations addObjectsFromArray:[nearbySocialRecords objectAtIndex:bucketIndex]];
     
     return annotations;
 }
@@ -976,7 +970,7 @@ enum GeoNames {
     
     [layers release];
     [currentLocationResponseIds release];
-    [nearbyRecordAnnotations release];
+    [nearbySocialRecords release];
     
     [leftButton release];
     [rightButton release];

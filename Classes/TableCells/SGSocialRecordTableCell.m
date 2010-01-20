@@ -27,6 +27,9 @@ static UIImage* kDefaultImage = nil;
         serviceImageView = [[UIImageView alloc] initWithImage:kDefaultImage];
         serviceImageView.frame = CGRectMake(22.0, 22.0, 16.0, 16.0);
         [self.imageView addSubview:serviceImageView];
+        
+        userProfile = nil;
+        self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     
     return self;
@@ -34,26 +37,32 @@ static UIImage* kDefaultImage = nil;
 
 - (void) setUserProfile:(SGSocialRecord*)profile
 {
+    if(userProfile)
+        userProfile.helperView = nil;
+    
     userProfile = profile;
-    
     serviceImageView.image =  profile.serviceImage;
-    
-    self.textLabel.text = profile.name;
-    self.detailTextLabel.text = profile.body;
-    
-    UIImage* image = profile.profileImage;
-    
-    if(!image || (image && [image isKindOfClass:[NSNull class]]))
-        image = kDefaultImage;
-    else
-        image = [UIImage imageWithImage:image scaledToSize:CGSizeMake(38.0, 38.0)];
-    
-    self.imageView.image = image;
+    userProfile.helperView = self;
 }
 
 - (SGSocialRecord*) userProfile
 {
     return userProfile;
+}
+
+- (void) layoutSubviews
+{
+    [super layoutSubviews];
+    
+    self.textLabel.text = userProfile.name;
+    self.detailTextLabel.text = userProfile.body;
+    
+    UIImage* image = userProfile.profileImage;
+    
+    if(!image || [image isKindOfClass:[NSNull class]])
+        image = kDefaultImage;
+    
+    self.imageView.image = image;    
 }
 
 - (void) dealloc

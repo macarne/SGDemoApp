@@ -20,15 +20,5 @@
     return [UIImage imageNamed:@"Twitter.png"];
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////
-#pragma mark -
-#pragma mark SGRecord overrides 
-//////////////////////////////////////////////////////////////////////////////////////////////// 
-
-- (NSString*) profileURL
-{
-    return [NSString stringWithFormat:@"http://m.twitter.com/%@/status/%@", [self.userDefinedProperties objectForKey:@"username"], self.recordId];
-}
-
 @end
 

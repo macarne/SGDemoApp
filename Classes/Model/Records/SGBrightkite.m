@@ -31,4 +31,9 @@
     return [NSString stringWithFormat:@"http://brightkite.com/objects/%@", self.recordId];
 }
 
+- (NSString*) body
+{
+    return [self.userDefinedProperties objectForKey:@"location"];
+}
+
 @end

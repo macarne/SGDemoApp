@@ -16,6 +16,7 @@
     if(self = [super init]) {
         
         webView = [[UIWebView alloc] initWithFrame:CGRectZero];
+        webView.scalesPageToFit = YES;
     }
     
     return self;
@@ -25,6 +26,13 @@
 {
     NSURLRequest* request = [NSURLRequest requestWithURL:[NSURL URLWithString:stringURL]];
     [webView loadRequest:request];
+}
+
+- (void) viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"about:blank"]]];
 }
 
 - (void) loadView

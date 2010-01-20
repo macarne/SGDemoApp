@@ -57,7 +57,7 @@
 
 - (NSString*) profileURL
 {
-    return @"";
+    return [self.userDefinedProperties objectForKey:@"url"]; 
 }
 
 - (UIImage*) coverImage
@@ -84,7 +84,7 @@
     }
     
     // Photo image
-    urlString = [self.userDefinedProperties objectForKey:@"iamge"];
+    urlString = [self.userDefinedProperties objectForKey:@"image"];
     if(urlString) {
         
         NSData* data = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];

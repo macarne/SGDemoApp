@@ -156,6 +156,9 @@ They aren't very pretty at the moment.
 ================================================================================
 CHANGES FROM PREVIOUS VERSIONS:
 
+Version 0.2.1
+- Allow filtering by types in nearby requests.
+
 Version 0.2.0
 - Added reverse geocoding.
 - Implemented the new SimpleGeo endpoints that allow multiple records to be
