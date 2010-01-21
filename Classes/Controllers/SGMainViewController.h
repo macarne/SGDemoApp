@@ -37,7 +37,7 @@
     NSMutableArray* currentLocationResponseIds;
     NSMutableArray* nearbySocialRecords;
     
-    UIBarButtonItem* leftButton, *rightButton;
+    UIBarButtonItem* leftButton, *rightButton, *locateButton;
     UILabel* bucketLabel;
     UILabel* loadingLabel;
 }

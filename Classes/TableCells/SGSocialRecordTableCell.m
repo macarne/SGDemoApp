@@ -7,10 +7,7 @@
 //
 
 #import "SGSocialRecordTableCell.h"
-
 #import "UIImageAdditions.h"
-
-static UIImage* kDefaultImage = nil;
 
 @implementation SGSocialRecordTableCell
 
@@ -20,12 +17,8 @@ static UIImage* kDefaultImage = nil;
 {
     
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        
-        if(!kDefaultImage)
-            kDefaultImage = [[UIImage imageWithImage:[UIImage imageNamed:@"SGDefaultProfilePicture.png"] scaledToSize:CGSizeMake(38.0, 38.0)] retain];
-        
-        serviceImageView = [[UIImageView alloc] initWithImage:kDefaultImage];
-        serviceImageView.frame = CGRectMake(22.0, 22.0, 16.0, 16.0);
+                
+        serviceImageView = [[UIImageView alloc] initWithImage:nil];
         [self.imageView addSubview:serviceImageView];
         
         userProfile = nil;
@@ -43,6 +36,8 @@ static UIImage* kDefaultImage = nil;
     userProfile = profile;
     serviceImageView.image =  profile.serviceImage;
     userProfile.helperView = self;
+    
+    [self layoutSubviews];
 }
 
 - (SGSocialRecord*) userProfile
@@ -56,13 +51,10 @@ static UIImage* kDefaultImage = nil;
     
     self.textLabel.text = userProfile.name;
     self.detailTextLabel.text = userProfile.body;
-    
-    UIImage* image = userProfile.profileImage;
-    
-    if(!image || [image isKindOfClass:[NSNull class]])
-        image = kDefaultImage;
-    
-    self.imageView.image = image;    
+    self.imageView.image = userProfile.profileImage;
+    serviceImageView.frame = CGRectMake(self.imageView.frame.size.width - 16.0,
+                                        self.imageView.frame.size.height - 16.0,
+                                        16.0, 16.0);
 }
 
 - (void) dealloc
@@ -70,6 +62,5 @@ static UIImage* kDefaultImage = nil;
     [serviceImageView release];
     [super dealloc];
 }
-
 
 @end

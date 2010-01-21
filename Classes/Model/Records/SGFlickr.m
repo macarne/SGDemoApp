@@ -15,20 +15,16 @@
 #pragma mark Accessor methods 
 //////////////////////////////////////////////////////////////////////////////////////////////// 
 
+- (UIImage*) photo
+{
+    return profileImage;
+}
+
 - (UIImage*) serviceImage
 {
     return [UIImage imageNamed:@"Flickr.png"];
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////
-#pragma mark -
-#pragma mark SGRecord overrides 
-//////////////////////////////////////////////////////////////////////////////////////////////// 
-
-- (NSString*) profileURL
-{
-    return [NSString stringWithFormat:@"http://flickr.com/photos/%@/%@", [self.userDefinedProperties objectForKey:@"username"], self.recordId];
-}
 
 @end
 

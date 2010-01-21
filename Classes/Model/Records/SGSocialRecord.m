@@ -8,16 +8,25 @@
 
 #import "SGSocialRecord.h"
 
+#import "UIImageAdditions.h"
+
 @implementation SGSocialRecord 
 
-@synthesize helperView, profileImage, photo, serviceImage;
-@dynamic name;
+@synthesize helperView, photo, serviceImage;
+@dynamic name, profileImage;
 
 - (id) init
 {
     if(self = [super init]) {
         
         serviceImage = nil;
+        profileImage = nil;
+        photo = nil;
+        
+        if(!kDefaultProfileImage)
+            kDefaultProfileImage = [[UIImage imageWithImage:[UIImage imageNamed:@"SGDefaultProfilePicture.png"]
+                                               scaledToSize:CGSizeMake(38.0, 38.0)] retain];
+
         
     }
     
@@ -65,34 +74,48 @@
     return [self profileImage];
 }
 
+- (void) setProfileImage:(UIImage*)image
+{
+    profileImage = [image retain];
+}
+
+- (UIImage*) profileImage
+{
+    UIImage* pImage = profileImage;
+    if(!pImage)
+        pImage = kDefaultProfileImage;
+    
+    return pImage;
+}
+
 - (void) fetchImages
 {
     BOOL recievedNewImage = NO;
     
     // Profile image
-    NSString* urlString = [self.userDefinedProperties objectForKey:@"thumbnail"];
-    if(urlString) {
+    NSString* urlString = [userDefinedProperties objectForKey:@"thumbnail"];
+    if(!profileImage && urlString) {
      
         NSData* data = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
         
         if(data) {
          
-            self.profileImage = [[UIImage imageWithData:data] retain];
-            recievedNewImage = YES;
+            self.profileImage = [UIImage imageWithData:data];
+            recievedNewImage |= YES;
         }
         
     }
     
     // Photo image
-    urlString = [self.userDefinedProperties objectForKey:@"image"];
-    if(urlString) {
+    urlString = [userDefinedProperties objectForKey:@"image"];
+    if(!photo && urlString) {
         
         NSData* data = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
         
         if(data) {
             
             self.photo = [[UIImage imageWithData:data] retain];            
-            recievedNewImage = YES;
+            recievedNewImage |= YES;
         }
         
     }

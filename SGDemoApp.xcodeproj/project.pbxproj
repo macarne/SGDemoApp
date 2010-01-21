@@ -33,7 +33,6 @@
 		4A24236010DB0E6D005D1CB1 /* Flickr.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A24235210DB0E6D005D1CB1 /* Flickr.png */; };
 		4A24236110DB0E6D005D1CB1 /* LocateMeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A24235310DB0E6D005D1CB1 /* LocateMeButton.png */; };
 		4A24236210DB0E6D005D1CB1 /* Twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A24235410DB0E6D005D1CB1 /* Twitter.png */; };
-		4A24236310DB0E6D005D1CB1 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 4A24235510DB0E6D005D1CB1 /* iTunesArtwork */; };
 		4A24236410DB0E6D005D1CB1 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A24235710DB0E6D005D1CB1 /* MainWindow.xib */; };
 		4A24236510DB0E6D005D1CB1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4A24235810DB0E6D005D1CB1 /* Settings.bundle */; };
 		4A24248D10DB0EDD005D1CB1 /* SGBluePin.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A24242010DB0EDD005D1CB1 /* SGBluePin.png */; };
@@ -54,10 +53,13 @@
 		4A2424E710DB10FC005D1CB1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A2424E610DB10FC005D1CB1 /* CoreLocation.framework */; };
 		4A24250810DB1119005D1CB1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A24250710DB1119005D1CB1 /* MapKit.framework */; };
 		4A24250F10DB112D005D1CB1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A24250E10DB112D005D1CB1 /* QuartzCore.framework */; };
-		4A24270410DB156D005D1CB1 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 4A24270310DB156D005D1CB1 /* README */; };
 		4A86347411076E4600DB3A18 /* SGTwitterLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A86347311076E4600DB3A18 /* SGTwitterLayer.m */; };
 		4A86347711076E4D00DB3A18 /* SGFlickrLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A86347611076E4D00DB3A18 /* SGFlickrLayer.m */; };
 		4A86347A11076E5700DB3A18 /* SGBrightkiteLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A86347911076E5700DB3A18 /* SGBrightkiteLayer.m */; };
+		4A8636981107D03B00DB3A18 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A8636961107D03B00DB3A18 /* Icon.png */; };
+		4A8636991107D03B00DB3A18 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A8636971107D03B00DB3A18 /* iTunesArtwork.png */; };
+		4A8636B61107D35000DB3A18 /* LeftButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A8636B41107D35000DB3A18 /* LeftButton.png */; };
+		4A8636B71107D35000DB3A18 /* RightButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A8636B51107D35000DB3A18 /* RightButton.png */; };
 		4ABA636711064CB200E04C2F /* MyToken.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4ABA636611064CB200E04C2F /* MyToken.plist */; };
 		4AD169EE10DFECCF0057D9EC /* SGRecordAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD169ED10DFECCF0057D9EC /* SGRecordAdditions.m */; };
 		4AD16A0E10DFF5AB0057D9EC /* UIImageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD16A0D10DFF5AB0057D9EC /* UIImageAdditions.m */; };
@@ -105,7 +107,6 @@
 		4A24235210DB0E6D005D1CB1 /* Flickr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flickr.png; sourceTree = "<group>"; };
 		4A24235310DB0E6D005D1CB1 /* LocateMeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocateMeButton.png; sourceTree = "<group>"; };
 		4A24235410DB0E6D005D1CB1 /* Twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Twitter.png; sourceTree = "<group>"; };
-		4A24235510DB0E6D005D1CB1 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		4A24235610DB0E6D005D1CB1 /* SGDemoApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGDemoApp_Prefix.pch; sourceTree = "<group>"; };
 		4A24235710DB0E6D005D1CB1 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		4A24235810DB0E6D005D1CB1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -157,6 +158,10 @@
 		4A86347611076E4D00DB3A18 /* SGFlickrLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGFlickrLayer.m; sourceTree = "<group>"; };
 		4A86347811076E5700DB3A18 /* SGBrightkiteLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGBrightkiteLayer.h; sourceTree = "<group>"; };
 		4A86347911076E5700DB3A18 /* SGBrightkiteLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGBrightkiteLayer.m; sourceTree = "<group>"; };
+		4A8636961107D03B00DB3A18 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		4A8636971107D03B00DB3A18 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		4A8636B41107D35000DB3A18 /* LeftButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeftButton.png; sourceTree = "<group>"; };
+		4A8636B51107D35000DB3A18 /* RightButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightButton.png; sourceTree = "<group>"; };
 		4ABA636611064CB200E04C2F /* MyToken.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyToken.plist; sourceTree = "<group>"; };
 		4AD169EC10DFECCF0057D9EC /* SGRecordAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGRecordAdditions.h; sourceTree = "<group>"; };
 		4AD169ED10DFECCF0057D9EC /* SGRecordAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGRecordAdditions.m; sourceTree = "<group>"; };
@@ -317,11 +322,12 @@
 		4A24234A10DB0E6D005D1CB1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4A8636961107D03B00DB3A18 /* Icon.png */,
+				4A8636971107D03B00DB3A18 /* iTunesArtwork.png */,
 				4ABA636611064CB200E04C2F /* MyToken.plist */,
 				4A24234B10DB0E6D005D1CB1 /* SGDemoApp-Info.plist */,
 				4A24234C10DB0E6D005D1CB1 /* Entitlements.plist */,
 				4A24234D10DB0E6D005D1CB1 /* Images */,
-				4A24235510DB0E6D005D1CB1 /* iTunesArtwork */,
 				4A24235610DB0E6D005D1CB1 /* SGDemoApp_Prefix.pch */,
 				4A24235710DB0E6D005D1CB1 /* MainWindow.xib */,
 				4A24235810DB0E6D005D1CB1 /* Settings.bundle */,
@@ -333,6 +339,8 @@
 		4A24234D10DB0E6D005D1CB1 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				4A8636B41107D35000DB3A18 /* LeftButton.png */,
+				4A8636B51107D35000DB3A18 /* RightButton.png */,
 				4A24234E10DB0E6D005D1CB1 /* BlueTargetButton.png */,
 				4A24234F10DB0E6D005D1CB1 /* BrightKite.png */,
 				4A24235010DB0E6D005D1CB1 /* Crosshair.png */,
@@ -483,7 +491,6 @@
 				4A24236010DB0E6D005D1CB1 /* Flickr.png in Resources */,
 				4A24236110DB0E6D005D1CB1 /* LocateMeButton.png in Resources */,
 				4A24236210DB0E6D005D1CB1 /* Twitter.png in Resources */,
-				4A24236310DB0E6D005D1CB1 /* iTunesArtwork in Resources */,
 				4A24236410DB0E6D005D1CB1 /* MainWindow.xib in Resources */,
 				4A24236510DB0E6D005D1CB1 /* Settings.bundle in Resources */,
 				4A24248D10DB0EDD005D1CB1 /* SGBluePin.png in Resources */,
@@ -500,9 +507,12 @@
 				4A24249810DB0EDD005D1CB1 /* SGRedPin.png in Resources */,
 				4A24249910DB0EDD005D1CB1 /* SGTopInspectorBackground.png in Resources */,
 				4A24249E10DB0EDD005D1CB1 /* README in Resources */,
-				4A24270410DB156D005D1CB1 /* README in Resources */,
 				4AD16AF310E010CE0057D9EC /* Token.plist in Resources */,
 				4ABA636711064CB200E04C2F /* MyToken.plist in Resources */,
+				4A8636981107D03B00DB3A18 /* Icon.png in Resources */,
+				4A8636991107D03B00DB3A18 /* iTunesArtwork.png in Resources */,
+				4A8636B61107D35000DB3A18 /* LeftButton.png in Resources */,
+				4A8636B71107D35000DB3A18 /* RightButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

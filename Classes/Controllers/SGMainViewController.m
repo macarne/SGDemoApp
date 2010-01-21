@@ -116,7 +116,7 @@ enum GeoNames {
     [locationService addDelegate:self];
     [SGLocationService callbackOnMainThread:YES];
         
-    SGSetEnvironmentViewingRadius(100.0f);         // 1km
+    SGSetEnvironmentViewingRadius(1000.0f);         // 1km
     
     // The Token.plist file is just a file that contains the OAuth access
     // and secret key. Either create your own Token.plist file or just 
@@ -191,6 +191,7 @@ enum GeoNames {
     arNavigationViewController.dataSource = self;
     
     arNavigationViewController.arView.enableWalking = NO;
+    arNavigationViewController.arView.movableStack.maxStackAmount = 1;
     
     SGAnnotationViewContainer* container = [[[SGAnnotationViewContainer alloc] initWithFrame:CGRectZero] autorelease];
     container.frame = CGRectMake(200.0,
@@ -245,7 +246,7 @@ enum GeoNames {
     [button setImage:[UIImage imageNamed:@"BlueTargetButton.png"] forState:UIControlStateNormal];
     [button addTarget:self action:@selector(locateMe:) forControlEvents:UIControlEventTouchUpInside];
     button.frame = CGRectMake(0.0, 0.0, 30.0, 44.0);
-    UIBarButtonItem* locateButton = [[UIBarButtonItem alloc] initWithCustomView:button];
+    locateButton = [[UIBarButtonItem alloc] initWithCustomView:button];
     locateButton.width = 30.0;
     
     UIButton* infoButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
@@ -270,7 +271,6 @@ enum GeoNames {
     UIBarButtonItem* segmentedControlButton = [[UIBarButtonItem alloc] initWithCustomView:segmentedControl];
     
     [self setToolbarItems:[NSArray arrayWithObjects:locateButton, segmentedControlButton, nil] animated:NO];
-    [locateButton release];
     [segmentedControlButton release];    
     
     [self.navigationController setToolbarHidden:NO animated:NO];
@@ -300,8 +300,7 @@ enum GeoNames {
     bucketLabel.backgroundColor = [UIColor clearColor];
     bucketLabel.font = [UIFont boldSystemFontOfSize:12.0];
     bucketLabel.textAlignment = UITextAlignmentCenter;
-    bucketLabel.frame = CGRectMake(0.0, 0.0, 0.0, 320.0);
-    bucketLabel.text = @"Bucket Title";
+    bucketLabel.frame = CGRectMake(0.0, 0.0, 200.0, 20.0);
     
     UIBarButtonItem* middleButton = [[UIBarButtonItem alloc] initWithCustomView:bucketLabel];
     [arNavigationViewController setToolbarItems:[NSArray arrayWithObjects:leftButton, middleButton,
@@ -313,12 +312,6 @@ enum GeoNames {
     [self lockScreen:YES];
 }
 
-- (void) viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];   
-    [segmentedControl setSelectedSegmentIndex:1];
-}
-
 ////////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark -
 #pragma mark UIButton methods 
@@ -326,19 +319,29 @@ enum GeoNames {
 
 - (void) changeViews:(UISegmentedControl*)sc
 {
+    [layerMapView stopRetrieving];
+    
     if(segmentedControl.selectedSegmentIndex == 0) {
      
+        locateButton.enabled = NO;
         [arNavigationViewController reloadAllBuckets];
         [self.navigationController presentModalViewController:arNavigationViewController animated:YES];
+        segmentedControl.selectedSegmentIndex = 1;
         
     } else if(segmentedControl.selectedSegmentIndex == 1) {
             
+        [layerMapView startRetrieving];
+        locateButton.enabled = YES;
+        self.title = @"Demo";
         [self.view bringSubviewToFront:layerMapView];
         
     } else {
-
+        
+        locateButton.enabled = NO;
+        self.title = @"Nearby Records";
         [socialRecordTableView reloadData];
         [self.view bringSubviewToFront:socialRecordTableView];
+        
     }
 }
 
@@ -371,7 +374,6 @@ enum GeoNames {
         
     
     [UIView commitAnimations];
-    
     infoButton.tag = !infoButton.tag;
 }
 
@@ -391,9 +393,9 @@ enum GeoNames {
         leftButton.enabled = bucketIndex != 0;
         
         if(!rightButton.enabled) {
-            arNavigationViewController.title = @"All";
+                bucketLabel.text = @"All";
         } else
-            arNavigationViewController.title = [modelController stringForModelType:bucketIndex];
+            bucketLabel.text = [modelController stringForModelType:bucketIndex];
     }
     
 }
@@ -405,9 +407,9 @@ enum GeoNames {
 
         NSInteger bucketIndex = arNavigationViewController.bucketIndex;
         if(bucketIndex == 3)
-            arNavigationViewController.title = @"All";
+            bucketLabel.text = @"All";
         else
-            arNavigationViewController.title = [modelController stringForModelType:bucketIndex];
+            bucketLabel.text = [modelController stringForModelType:bucketIndex];
         
         rightButton.enabled = bucketIndex != 3;
         leftButton.enabled = bucketIndex != 0;
@@ -417,7 +419,8 @@ enum GeoNames {
 
 - (void) containerSelected:(id)container
 {
-    
+    [albumScrollView addAlbums:[((SGAnnotationViewContainer*)container) getRecordAnnotations]];
+    [arNavigationViewController.arView addSubview:albumScrollView];
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -483,8 +486,8 @@ enum GeoNames {
     } else {
         
         annotationView.canShowCallout = YES;
+        
         [modelController addObjectToImageLoader:record];
-        record.helperView = annotationView;
         
         if([record isKindOfClass:[SGTweet class]])
             annotationView.pinColor = MKPinAnnotationColorGreen;
@@ -492,6 +495,8 @@ enum GeoNames {
             annotationView.pinColor = MKPinAnnotationColorPurple;    
         else if([record isKindOfClass:[SGBrightkite class]])
             annotationView.pinColor = MKPinAnnotationColorRed;
+        
+        
     }
     
     return annotationView;
@@ -535,7 +540,7 @@ enum GeoNames {
     
     if(tableView == socialRecordTableView) {
         
-        SGSocialRecordTableCell* socialCell = (SGSocialRecordTableCell*)[socialRecordTableView dequeueReusableCellWithIdentifier:@"NormalCell"];
+        SGSocialRecordTableCell* socialCell = (SGSocialRecordTableCell*)[tableView dequeueReusableCellWithIdentifier:@"NormalCell"];
     
         if(!socialCell)
             socialCell = [[[SGSocialRecordTableCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"NormalCell"] autorelease];
@@ -549,7 +554,7 @@ enum GeoNames {
         
         cell = [tableView dequeueReusableCellWithIdentifier:@"CensusCell"];
         if(!cell)
-            cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"CensusCell"] autorelease];
+            cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CensusCell"] autorelease];
         
         NSArray* recordAnnotations = [nearbySocialRecords objectAtIndex:section+3];
         if(section == kCensusSection_Weather) {
@@ -694,6 +699,8 @@ enum GeoNames {
         [webViewController loadURLString:[record profileURL]];
         webViewController.title = record.name;
         [self.navigationController pushViewController:webViewController animated:YES];
+        
+        segmentedControl.selectedSegmentIndex = 3;
     }
 }
 
@@ -740,8 +747,14 @@ enum GeoNames {
                 
                 record = [layer recordAnnotationFromGeoJSONDictionary:geoJSONDictionary];
             
-                if(record)
+                if(record) {
+                    
+                    if([record isKindOfClass:[SGSocialRecord class]])
+                        [modelController addObjectToImageLoader:(SGSocialRecord*)record];
+                    
                     [annotationViewRecords addObject:record];
+                    
+                }
             }        
             
         }
@@ -815,7 +828,7 @@ enum GeoNames {
             // For some of the census data layers,
             // we need to enlarge the radius to find the proper
             // weather station and points of interest.
-            radius = (i > 2) ? 10000.0 : 1.0;
+            radius = (i > 2) ? 1000.0 : 1.0;
         
             layer = [layers objectAtIndex:i];
             requestId = [layer retrieveRecordsForCoordinate:coordinate radius:radius types:nil limit:100];
@@ -853,7 +866,7 @@ enum GeoNames {
 
 - (NSInteger) viewControllerNumberOfBuckets:(SGARNavigationViewController*)nvc
 {
-    return 3;
+    return 4;
 }
 
 - (SGAnnotationView*) viewController:(SGARNavigationViewController*)nvc
@@ -866,7 +879,8 @@ enum GeoNames {
     if(!annotationView)
         annotationView = [[[SGAnnotationView alloc] initAtPoint:CGPointZero reuseIdentifier:@"SocialRecord"] autorelease];
     
-    annotationView.annotation;
+    ((SGSocialRecord*)annotation).helperView = annotationView;
+    annotationView.annotation = annotation;
     
     [self setupAnnotationView:annotationView];
     
@@ -889,10 +903,12 @@ enum GeoNames {
 - (void) setupAnnotationView:(SGAnnotationView*)annotationView
 {
     SGSocialRecord* record = (SGSocialRecord*)annotationView.annotation;
+    
+    annotationView.targetType = kSGAnnotationViewTargetType_Glass;
     annotationView.inspectorType = kSGAnnotationViewInspectorType_Photo;
     
     annotationView.titleLabel.text = record.name;
-    annotationView.photoImageView.image = record.photo;
+    annotationView.photoImageView.image = record.photo;    
     annotationView.messageLabel.text = record.body;
     annotationView.targetImageView.image = record.profileImage;
     

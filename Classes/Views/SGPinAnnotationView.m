@@ -23,7 +23,7 @@ static UIImage* DefaultImage = nil;
         self.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeInfoLight];
         
         recordImageView = [[UIImageView alloc] initWithImage:nil];
-        recordImageView.frame = CGRectMake(12.0, 12.0, 16.0, 16.0);
+        recordImageView.frame = CGRectMake(14.0, 14.0, 16.0, 16.0);
         
         UIImageView* imageView = [[UIImageView alloc] initWithImage:DefaultImage];
         imageView.frame = CGRectMake(0.0, 0.0, 28.0, 28.0);

@@ -51,14 +51,17 @@ Contains all of the data models.
     Layers
     Contains the single subclass of SGLayer used for all SGRecord.
     
-        SGSpecificLayer
-        This is a subclass of SGLayer. It is initialized with the name of the lyaer
-        and the subclass of SGManagedRecord. It needs a subclass of SGManagedRecord
-        because the layer needs to know how to build SGManagedRecords from incoming
-        GeoJSON NSDictionaries.
+        SGTwitterLayer
+        A subclass of SGLayer that builds SGTweets.
+        
+        SGFlickrLayer
+        A subclass of SGLayer that builds SGFlickrs.
+        
+        SGBrightkite
+        A subclass of SGLayer that builds SGBrightkites.
         
     Records
-    Contains all subclasses of SGManagedRecord.
+    Contains all subclasses of SGRecord.
     
         SGSocialRecord
         A subclass of SGManagedRecord. Since there are some commonalities between
@@ -103,6 +106,9 @@ Contains all categories.
     SGRecordAdditions
     Defines helper methods for SGRecord subclasses.
     
+    UIImageAdditions
+    Helper methods for resizing images.
+    
 Controllers
 Contains all subclasses of UIViewController.
 
@@ -124,6 +130,11 @@ The application delegate.
 
 ================================================================================
 CHANGES FROM PREVIOUS VERSIONS:
+
+Version 0.9.0
+- Updated the icon and itunes artwork.
+- Added a simple census table view.
+- Added SGLayer specific subclasses.
 
 Version 0.8.10
 - Added categories to the repository.

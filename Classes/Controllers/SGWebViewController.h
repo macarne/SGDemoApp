@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface SGWebViewController : UIViewController {
+@interface SGWebViewController : UIViewController <UIWebViewDelegate> {
 
     @private
     UIWebView* webView;
