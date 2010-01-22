@@ -60,7 +60,6 @@
 		4A8636991107D03B00DB3A18 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A8636971107D03B00DB3A18 /* iTunesArtwork.png */; };
 		4A8636B61107D35000DB3A18 /* LeftButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A8636B41107D35000DB3A18 /* LeftButton.png */; };
 		4A8636B71107D35000DB3A18 /* RightButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A8636B51107D35000DB3A18 /* RightButton.png */; };
-		4ABA636711064CB200E04C2F /* MyToken.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4ABA636611064CB200E04C2F /* MyToken.plist */; };
 		4AD169EE10DFECCF0057D9EC /* SGRecordAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD169ED10DFECCF0057D9EC /* SGRecordAdditions.m */; };
 		4AD16A0E10DFF5AB0057D9EC /* UIImageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD16A0D10DFF5AB0057D9EC /* UIImageAdditions.m */; };
 		4AD16AF310E010CE0057D9EC /* Token.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AD16AF210E010CE0057D9EC /* Token.plist */; };
@@ -162,7 +161,6 @@
 		4A8636971107D03B00DB3A18 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		4A8636B41107D35000DB3A18 /* LeftButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeftButton.png; sourceTree = "<group>"; };
 		4A8636B51107D35000DB3A18 /* RightButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightButton.png; sourceTree = "<group>"; };
-		4ABA636611064CB200E04C2F /* MyToken.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyToken.plist; sourceTree = "<group>"; };
 		4AD169EC10DFECCF0057D9EC /* SGRecordAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGRecordAdditions.h; sourceTree = "<group>"; };
 		4AD169ED10DFECCF0057D9EC /* SGRecordAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGRecordAdditions.m; sourceTree = "<group>"; };
 		4AD16A0C10DFF5AB0057D9EC /* UIImageAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageAdditions.h; sourceTree = "<group>"; };
@@ -324,7 +322,6 @@
 			children = (
 				4A8636961107D03B00DB3A18 /* Icon.png */,
 				4A8636971107D03B00DB3A18 /* iTunesArtwork.png */,
-				4ABA636611064CB200E04C2F /* MyToken.plist */,
 				4A24234B10DB0E6D005D1CB1 /* SGDemoApp-Info.plist */,
 				4A24234C10DB0E6D005D1CB1 /* Entitlements.plist */,
 				4A24234D10DB0E6D005D1CB1 /* Images */,
@@ -508,7 +505,6 @@
 				4A24249910DB0EDD005D1CB1 /* SGTopInspectorBackground.png in Resources */,
 				4A24249E10DB0EDD005D1CB1 /* README in Resources */,
 				4AD16AF310E010CE0057D9EC /* Token.plist in Resources */,
-				4ABA636711064CB200E04C2F /* MyToken.plist in Resources */,
 				4A8636981107D03B00DB3A18 /* Icon.png in Resources */,
 				4A8636991107D03B00DB3A18 /* iTunesArtwork.png in Resources */,
 				4A8636B61107D35000DB3A18 /* LeftButton.png in Resources */,
