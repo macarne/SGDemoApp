@@ -131,6 +131,11 @@ The application delegate.
 ================================================================================
 CHANGES FROM PREVIOUS VERSIONS:
 
+Version 0.9.1
+- Updated to v0.3.0 of the SDK
+- Added a reverse geocoder section in the census 
+table view
+
 Version 0.9.0
 - Updated the icon and itunes artwork.
 - Added a simple census table view.

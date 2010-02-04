@@ -41,17 +41,17 @@
 - (NSString*) name
 {
         
-    NSString* name = [self.userDefinedProperties objectForKey:@"name"];
+    NSString* name = [self.properties objectForKey:@"name"];
     
     if(!name)
-        name = [self.userDefinedProperties objectForKey:@"username"];
+        name = [self.properties objectForKey:@"username"];
     
     return name;
 }
 
 - (NSString*) body
 {
-    return [self.userDefinedProperties objectForKey:@"body"];
+    return [self.properties objectForKey:@"body"];
 }
 
 - (NSString*) title
@@ -61,12 +61,12 @@
 
 - (NSString*) subtitle
 {
-    return [self.userDefinedProperties objectForKey:@"body"];
+    return [self.properties objectForKey:@"body"];
 }
 
 - (NSString*) profileURL
 {
-    return [self.userDefinedProperties objectForKey:@"url"]; 
+    return [self.properties objectForKey:@"url"]; 
 }
 
 - (UIImage*) coverImage
@@ -93,7 +93,7 @@
     BOOL recievedNewImage = NO;
     
     // Profile image
-    NSString* urlString = [userDefinedProperties objectForKey:@"thumbnail"];
+    NSString* urlString = [properties objectForKey:@"thumbnail"];
     if(!profileImage && urlString) {
      
         NSData* data = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
@@ -107,7 +107,7 @@
     }
     
     // Photo image
-    urlString = [userDefinedProperties objectForKey:@"image"];
+    urlString = [properties objectForKey:@"image"];
     if(!photo && urlString) {
         
         NSData* data = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];

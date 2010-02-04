@@ -11,10 +11,10 @@
 
 @implementation SGBrightkiteLayer
 
-- (id<SGRecordAnnotation>) recordAnnotationFromGeoJSONDictionary:(NSDictionary*)dictionary
+- (id<SGRecordAnnotation>) recordAnnotationFromGeoJSONObject:(NSDictionary*)dictionary
 {
     SGSocialRecord* record = [[[SGBrightkite alloc] init] autorelease];
-    [record updateRecordWithGeoJSONDictionary:dictionary];
+    [record updateRecordWithGeoJSONObject:dictionary];
     
     return record;
 }

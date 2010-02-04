@@ -10,20 +10,21 @@
 #import "SGLocationTypes.h"
 #import "SGSocialRecord.h"
 
-enum SGLayerType {
+enum SGModelType {
     
-    kSGLayerType_Twitter = 0,
-    kSGLayerType_Flickr,
-    kSGLayerType_Brightkite,
+    kSGModelType_Twitter = 0,
+    kSGModelType_Flickr,
+    kSGModelType_Brightkite,
     
-    kSGLayerType_USWeather,
-    kSGLayerType_USZip,
-    kSGLayerType_GeoNames,
+    kSGModelType_Address,
+    kSGModelType_USWeather,
+    kSGModelType_USZip,
+    kSGModelType_GeoNames,
     
-    kSGLayerType_Amount
+    kSGModelType_Amount
 };
 
-typedef NSInteger SGLayerType;
+typedef NSInteger SGModelType;
 
 @interface SGModelController : NSObject {
     
@@ -38,7 +39,7 @@ typedef NSInteger SGLayerType;
 - (void) addObjectToImageLoader:(SGSocialRecord*)profile;
 - (void) removeObjectFromImageLoader:(SGSocialRecord*)profile;
 
-- (NSString*) stringForModelType:(SGLayerType)type;
+- (NSString*) stringForModelType:(SGModelType)type;
 
 
 @end

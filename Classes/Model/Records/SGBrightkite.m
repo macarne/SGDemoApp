@@ -28,7 +28,7 @@
 
 - (NSString*) body
 {
-    return [self.userDefinedProperties objectForKey:@"location"];
+    return [self.properties objectForKey:@"location"];
 }
 
 @end

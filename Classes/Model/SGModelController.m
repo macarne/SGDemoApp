@@ -91,27 +91,30 @@ static SGModelController* modelController = nil;
     [pool release];
 }
 
-- (NSString*) stringForModelType:(SGLayerType)type
+- (NSString*) stringForModelType:(SGModelType)type
 {
     NSString* typeString = @"";
     
     switch (type) {
-        case kSGLayerType_Twitter:
+        case kSGModelType_Twitter:
             typeString = @"Twitter";
             break;
-        case kSGLayerType_Flickr:
+        case kSGModelType_Flickr:
             typeString = @"Flickr";
             break;
-        case kSGLayerType_Brightkite:
+        case kSGModelType_Brightkite:
             typeString = @"Brightkite";
             break;
-        case kSGLayerType_USZip:
+        case kSGModelType_Address:
+            typeString = @"Reverse Geocode";
+            break;
+        case kSGModelType_USZip:
             typeString = @"USZip";
             break;
-        case kSGLayerType_USWeather:
+        case kSGModelType_USWeather:
             typeString = @"USWeather";
             break;
-        case kSGLayerType_GeoNames:
+        case kSGModelType_GeoNames:
             typeString = @"GeoNames";
             break;
         default:

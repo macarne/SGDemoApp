@@ -11,10 +11,10 @@
 
 @implementation SGTwitterLayer
 
-- (id<SGRecordAnnotation>) recordAnnotationFromGeoJSONDictionary:(NSDictionary*)dictionary
+- (id<SGRecordAnnotation>) recordAnnotationFromGeoJSONObject:(NSDictionary*)dictionary
 {
     SGSocialRecord* record = (SGSocialRecord*)[[[SGTweet alloc] init] autorelease];
-    [record updateRecordWithGeoJSONDictionary:dictionary];
+    [record updateRecordWithGeoJSONObject:dictionary];
     
     return record;
 }

@@ -11,10 +11,10 @@
 
 @implementation SGFlickrLayer
 
-- (id<SGRecordAnnotation>) recordAnnotationFromGeoJSONDictionary:(NSDictionary*)dictionary
+- (id<SGRecordAnnotation>) recordAnnotationFromGeoJSONObject:(NSDictionary*)dictionary
 {
     SGSocialRecord* record = (SGSocialRecord*)[[[SGFlickr alloc] init] autorelease];
-    [record updateRecordWithGeoJSONDictionary:dictionary];
+    [record updateRecordWithGeoJSONObject:dictionary];
     
     return record;
 }

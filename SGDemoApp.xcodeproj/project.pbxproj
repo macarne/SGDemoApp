@@ -53,6 +53,7 @@
 		4A2424E710DB10FC005D1CB1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A2424E610DB10FC005D1CB1 /* CoreLocation.framework */; };
 		4A24250810DB1119005D1CB1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A24250710DB1119005D1CB1 /* MapKit.framework */; };
 		4A24250F10DB112D005D1CB1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A24250E10DB112D005D1CB1 /* QuartzCore.framework */; };
+		4A4C327C110E069800EF28A1 /* MyToken.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A4C327B110E069800EF28A1 /* MyToken.plist */; };
 		4A86347411076E4600DB3A18 /* SGTwitterLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A86347311076E4600DB3A18 /* SGTwitterLayer.m */; };
 		4A86347711076E4D00DB3A18 /* SGFlickrLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A86347611076E4D00DB3A18 /* SGFlickrLayer.m */; };
 		4A86347A11076E5700DB3A18 /* SGBrightkiteLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A86347911076E5700DB3A18 /* SGBrightkiteLayer.m */; };
@@ -151,6 +152,9 @@
 		4A24250710DB1119005D1CB1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4A24250E10DB112D005D1CB1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4A24270310DB156D005D1CB1 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		4A4C327B110E069800EF28A1 /* MyToken.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyToken.plist; sourceTree = "<group>"; };
+		4A6798AE111B2D5100ACCF88 /* GeoJSON+NSArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoJSON+NSArray.h"; sourceTree = "<group>"; };
+		4A6798AF111B2D5100ACCF88 /* GeoJSON+NSDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoJSON+NSDictionary.h"; sourceTree = "<group>"; };
 		4A86347211076E4600DB3A18 /* SGTwitterLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGTwitterLayer.h; sourceTree = "<group>"; };
 		4A86347311076E4600DB3A18 /* SGTwitterLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGTwitterLayer.m; sourceTree = "<group>"; };
 		4A86347511076E4D00DB3A18 /* SGFlickrLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGFlickrLayer.h; sourceTree = "<group>"; };
@@ -320,6 +324,7 @@
 		4A24234A10DB0E6D005D1CB1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4A4C327B110E069800EF28A1 /* MyToken.plist */,
 				4A8636961107D03B00DB3A18 /* Icon.png */,
 				4A8636971107D03B00DB3A18 /* iTunesArtwork.png */,
 				4A24234B10DB0E6D005D1CB1 /* SGDemoApp-Info.plist */,
@@ -364,6 +369,8 @@
 		4A24240A10DB0EDD005D1CB1 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				4A6798AE111B2D5100ACCF88 /* GeoJSON+NSArray.h */,
+				4A6798AF111B2D5100ACCF88 /* GeoJSON+NSDictionary.h */,
 				4A24240B10DB0EDD005D1CB1 /* SGAlbum.h */,
 				4A24240C10DB0EDD005D1CB1 /* SGAnnotationView.h */,
 				4A24240D10DB0EDD005D1CB1 /* SGAnnotationViewContainer.h */,
@@ -509,6 +516,7 @@
 				4A8636991107D03B00DB3A18 /* iTunesArtwork.png in Resources */,
 				4A8636B61107D35000DB3A18 /* LeftButton.png in Resources */,
 				4A8636B71107D35000DB3A18 /* RightButton.png in Resources */,
+				4A4C327C110E069800EF28A1 /* MyToken.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +556,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Resources/Entitlements.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Stumpkat, LLC";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -565,6 +575,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = SGDemoApp;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "29910E5A-952F-4B82-800E-8F34E7140609";
 				SDKROOT = iphoneos3.1;
 			};
 			name = Debug;
@@ -573,6 +584,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joseph Stump (97NY3ELK8W)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -587,6 +599,7 @@
 					SGiPhoneSDK,
 				);
 				PRODUCT_NAME = SGDemoApp;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4137ED03-D2EA-47CB-89EE-07EC04F8F54E";
 				SDKROOT = iphoneos3.1;
 			};
 			name = Release;

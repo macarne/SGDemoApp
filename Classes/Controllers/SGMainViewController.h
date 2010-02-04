@@ -36,6 +36,7 @@
     NSMutableArray* layers;
     NSMutableArray* currentLocationResponseIds;
     NSMutableArray* nearbySocialRecords;
+    NSDictionary* addressInformation;
     
     UIBarButtonItem* leftButton, *rightButton, *locateButton;
     UILabel* bucketLabel;
