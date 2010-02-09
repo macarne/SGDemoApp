@@ -8,7 +8,6 @@
 
 #import "SGFlickr.h"
 
-
 @interface SGFlickrLayer : SGLayer {
 
 }

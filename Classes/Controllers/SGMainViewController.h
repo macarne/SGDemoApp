@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
-#import <MapKit/MapKit.h>
 
-#import "SimpleGeo.h"
-
+#import "SGLayerMapView.h"
 #import "SGModelController.h"
 #import "SGWebViewController.h"
 
