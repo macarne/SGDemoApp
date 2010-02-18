@@ -140,7 +140,7 @@ enum Address {
     // and secret key. Either create your own Token.plist file or just 
     // create the OAuth object with the proper string values.
     NSBundle* mainBundle = [NSBundle mainBundle];
-    NSString* path = [mainBundle pathForResource:@"Token" ofType:@"plist"];
+    NSString* path = [mainBundle pathForResource:@"MyToken" ofType:@"plist"];
     NSDictionary* token = [NSDictionary dictionaryWithContentsOfFile:path];
     
     SGOAuth* oAuth = [[SGOAuth alloc] initWithKey:[token objectForKey:@"key"] secret:[token objectForKey:@"secret"]];
