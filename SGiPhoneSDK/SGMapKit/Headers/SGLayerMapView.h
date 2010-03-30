@@ -60,6 +60,9 @@
     
     NSTimeInterval reloadTimeInterval;
     BOOL addRetrievedRecordsToLayer;
+    
+    double requestStartTime;
+    double requestEndTime;
  
     @private
     NSMutableDictionary* _sgLayers;
@@ -100,6 +103,20 @@
 * each SGLayer object as they are loaded by the map.
 */
 @property (nonatomic, assign) BOOL addRetrievedRecordsToLayer;
+
+/*!
+ * @property
+ * @abstract An Epoch timestamp that will be used when obtain nearby records
+ * the layers. The default is 0.
+ */
+@property (nonatomic, assign) double requestStartTime;
+
+/*!
+* @property
+* @abstract An Epoch timestamp that will be used when obtain nearby records
+* the layers. The default is 0.
+*/
+@property (nonatomic, assign) double requestEndTime;
 
 /*!
 * @method startRetrieving

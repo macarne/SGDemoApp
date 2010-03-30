@@ -236,6 +236,14 @@ detects it needs to refresh its annotations.
 <dd><p>The time interval (expressed in seconds) that tells the map to
 retrieve annotations when no movement has occurred.
 </p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instp/SGLayerMapView/requestEndTime" target="_top">requestEndTime</a></tt></dt>
+<dd><p>An Epoch timestamp that will be used when obtain nearby records
+the layers. The default is 0.
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instp/SGLayerMapView/requestStartTime" target="_top">requestStartTime</a></tt></dt>
+<dd><p>An Epoch timestamp that will be used when obtain nearby records
+the layers. The default is 0.
+</p></dd>
 </dl>
 <hr>
 <!-- headerDoc=instp;  uid=//simplegeo/occ/instp/SGLayerMapView/addRetrievedRecordsToLayer;   name=SGLayerMapView::addRetrievedRecordsToLayer --><a name="//simplegeo/occ/instp/SGLayerMapView/addRetrievedRecordsToLayer"></a>
@@ -295,11 +303,45 @@ when no animations have occurred.
 <!-- end discussion -->
 </p>
 <p></p>
+<hr>
+<!-- headerDoc=instp;  uid=//simplegeo/occ/instp/SGLayerMapView/requestEndTime;   name=SGLayerMapView::requestEndTime --><a name="//simplegeo/occ/instp/SGLayerMapView/requestEndTime"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="requestEndTime">requestEndTime</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>An Epoch timestamp that will be used when obtain nearby records
+the layers. The default is 0.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>@property (
+    <span class="param">nonatomic</span>,
+    <span class="param">assign</span>) <!-- a logicalPath="//simplegeo/occ/cl/double //simplegeo/occ/tdef/double //simplegeo/occ/tag/double //simplegeo/occ/econst/double //simplegeo/occ/struct/double //simplegeo/occ/clconst/double //simplegeo/occ/intf/double" --><span class="type">double</span><!-- /a --> <!-- a logicalPath="//simplegeo/occ/econst/requestEndTime //simplegeo/occ/data/requestEndTime" --><span class="var">requestEndTime</span><!-- /a -->; </pre>
+</div>
+<p></p>
+<hr>
+<!-- headerDoc=instp;  uid=//simplegeo/occ/instp/SGLayerMapView/requestStartTime;   name=SGLayerMapView::requestStartTime --><a name="//simplegeo/occ/instp/SGLayerMapView/requestStartTime"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="requestStartTime">requestStartTime</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>An Epoch timestamp that will be used when obtain nearby records
+the layers. The default is 0.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>@property (
+    <span class="param">nonatomic</span>,
+    <span class="param">assign</span>) <!-- a logicalPath="//simplegeo/occ/cl/double //simplegeo/occ/tdef/double //simplegeo/occ/tag/double //simplegeo/occ/econst/double //simplegeo/occ/struct/double //simplegeo/occ/clconst/double //simplegeo/occ/intf/double" --><span class="type">double</span><!-- /a --> <!-- a logicalPath="//simplegeo/occ/econst/requestStartTime //simplegeo/occ/data/requestStartTime" --><span class="var">requestStartTime</span><!-- /a -->; </pre>
+</div>
+<p></p>
 <p><!-- start of footer -->
 
 <!-- end of footer -->
 </p>
-<p>&copy; SimpleGeo Last Updated: 02/22/2010
+<p>&copy; SimpleGeo Last Updated: 03/30/2010
 </p>
 </div>
 </body>
