@@ -115,7 +115,6 @@
 		4A476AAC11619B630066F747 /* SGEnvironmentConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGEnvironmentConstants.h; sourceTree = "<group>"; };
 		4A476AB111619B630066F747 /* SGMovableStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMovableStack.h; sourceTree = "<group>"; };
 		4A476AB211619B630066F747 /* SGRadar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGRadar.h; sourceTree = "<group>"; };
-		4A476AB311619B630066F747 /* SGRecordAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGRecordAnnotation.h; sourceTree = "<group>"; };
 		4A476AB511619B630066F747 /* SimpleGeo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleGeo.h; sourceTree = "<group>"; };
 		4A4C327B110E069800EF28A1 /* MyToken.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyToken.plist; sourceTree = "<group>"; };
 		4A86347211076E4600DB3A18 /* SGTwitterLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGTwitterLayer.h; sourceTree = "<group>"; };
@@ -184,7 +183,6 @@
 		4AEDBB6F1121F999003C1949 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = index.html; sourceTree = "<group>"; };
 		4AEDBB701121F999003C1949 /* toc.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = toc.html; sourceTree = "<group>"; };
 		4AEDBB711121F999003C1949 /* toc.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = toc.html; sourceTree = "<group>"; };
-		4AEDBB731121F999003C1949 /* CLLocationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLocationAdditions.h; sourceTree = "<group>"; };
 		4AEDBB741121F999003C1949 /* GeoJSON+NSArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoJSON+NSArray.h"; sourceTree = "<group>"; };
 		4AEDBB751121F999003C1949 /* GeoJSON+NSDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoJSON+NSDictionary.h"; sourceTree = "<group>"; };
 		4AEDBB761121F999003C1949 /* NSArrayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArrayAdditions.h; sourceTree = "<group>"; };
@@ -434,7 +432,6 @@
 				4A476AAC11619B630066F747 /* SGEnvironmentConstants.h */,
 				4A476AB111619B630066F747 /* SGMovableStack.h */,
 				4A476AB211619B630066F747 /* SGRadar.h */,
-				4A476AB311619B630066F747 /* SGRecordAnnotation.h */,
 				4A476AB511619B630066F747 /* SimpleGeo.h */,
 			);
 			path = Headers;
@@ -820,7 +817,6 @@
 		4AEDBB721121F999003C1949 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				4AEDBB731121F999003C1949 /* CLLocationAdditions.h */,
 				4AEDBB741121F999003C1949 /* GeoJSON+NSArray.h */,
 				4AEDBB751121F999003C1949 /* GeoJSON+NSDictionary.h */,
 				4AEDBB761121F999003C1949 /* NSArrayAdditions.h */,
