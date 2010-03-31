@@ -24,6 +24,9 @@ from http://simplegeo.com. At line 98 in SGMainViewController, a plist is loaded
 that "supposedly" contains the proper credentials. Either add your own Token.plist
 file to the project or just create create the SGOAuth object with plain-old NSStrings.
 
+Note: This demo application only loads records layers com.simplegeo.global.*
+If you want to view your personal layers, you need to modify the code.
+
 ================================================================================
 BUILD REQUIREMENTS:
 
